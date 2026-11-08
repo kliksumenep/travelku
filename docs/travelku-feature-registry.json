@@ -1,0 +1,2865 @@
+{
+  "schema_version": "1.0.0",
+  "source_library": "getmasteraitravelmodalcontentlibrary.md",
+  "source_application": "index.html",
+  "status_values": [
+    "active",
+    "partial",
+    "coming_soon"
+  ],
+  "verification_status_values": [
+    "source_reviewed",
+    "browser_tested",
+    "pending"
+  ],
+  "verification_note": "Seluruh entri ditinjau pada source. Browser end-to-end belum diuji; jangan menyamakan source_reviewed dengan browser_tested.",
+  "categories": [
+    {
+      "id": "dashboard",
+      "name": "Dashboard",
+      "order": 1
+    },
+    {
+      "id": "asisten_ai",
+      "name": "Asisten AI",
+      "order": 2
+    },
+    {
+      "id": "sales_quotation",
+      "name": "Sales & Quotation",
+      "order": 3
+    },
+    {
+      "id": "transaction_finance",
+      "name": "Transaction & Finance",
+      "order": 4
+    },
+    {
+      "id": "travel_operations",
+      "name": "Travel Operations",
+      "order": 5
+    },
+    {
+      "id": "tender_company_documents",
+      "name": "Tender & Company Documents",
+      "order": 6
+    },
+    {
+      "id": "proposal_builder",
+      "name": "Proposal Builder",
+      "order": 7
+    },
+    {
+      "id": "company_business_data",
+      "name": "Company & Business Data",
+      "order": 8
+    },
+    {
+      "id": "document_management",
+      "name": "Document Management",
+      "order": 9
+    },
+    {
+      "id": "communication_customer_service",
+      "name": "Communication & Customer Service",
+      "order": 10
+    },
+    {
+      "id": "business_reports_analytics",
+      "name": "Business Reports & Analytics",
+      "order": 11
+    },
+    {
+      "id": "settings_access",
+      "name": "Settings & Access",
+      "order": 12
+    }
+  ],
+  "features": [
+    {
+      "id": "dashboard_bisnis",
+      "number": 1,
+      "category_id": "dashboard",
+      "category": "Dashboard",
+      "category_order": 1,
+      "name": "Dashboard Bisnis",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "dashboard_bisnis",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "beranda",
+        "params": {},
+        "scope": "Dashboard ringkas yang saat ini tersedia."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L595",
+          "index.html#L1593"
+        ],
+        "note": "Dashboard berisi aksi dokumen, progres kop, dan dokumen terbaru; tidak memiliki ringkasan proyek, jadwal, atau keuangan lengkap."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "aktivitas_terbaru",
+      "number": 2,
+      "category_id": "dashboard",
+      "category": "Dashboard",
+      "category_order": 1,
+      "name": "Aktivitas Terbaru",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "aktivitas_terbaru",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "beranda",
+        "params": {},
+        "scope": "Panel dokumen terkini di beranda; log rinci tetap berada pada dokumen."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1593",
+          "index.html#L1401"
+        ],
+        "note": "Beranda menampilkan maksimal tiga dokumen terkini; log terbatas pada dokumen/trip, bukan feed aktivitas global."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "chat_jadi_dokumen",
+      "number": 3,
+      "category_id": "asisten_ai",
+      "category": "Asisten AI",
+      "category_order": 2,
+      "name": "Chat Jadi Dokumen",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "chat_jadi_dokumen",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "mulai-ai",
+        "params": {},
+        "scope": "Membuka alur prompt eksternal untuk quotation."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1468",
+          "index.html#L1495",
+          "index.html#L1720"
+        ],
+        "note": "Prompt disalin ke layanan AI eksternal, lalu JSON tempelan dapat diterapkan ke quotation; tidak ada integrasi AI di aplikasi."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "smart_data_extraction",
+      "number": 4,
+      "category_id": "asisten_ai",
+      "category": "Asisten AI",
+      "category_order": 2,
+      "name": "Smart Data Extraction",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "smart_data_extraction",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "smart_missing_information",
+      "number": 5,
+      "category_id": "asisten_ai",
+      "category": "Asisten AI",
+      "category_order": 2,
+      "name": "Smart Missing Information",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "smart_missing_information",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1124",
+          "index.html#L1638"
+        ],
+        "note": "The code validates required document fields and displays validation results; it does not analyze missing information or generate clarification questions."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "ai_document_writer",
+      "number": 6,
+      "category_id": "asisten_ai",
+      "category": "Asisten AI",
+      "category_order": 2,
+      "name": "AI Document Writer",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "ai_document_writer",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "ai_business_assistant",
+      "number": 7,
+      "category_id": "asisten_ai",
+      "category": "Asisten AI",
+      "category_order": 2,
+      "name": "AI Business Assistant",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "ai_business_assistant",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "auto_document_bundle",
+      "number": 8,
+      "category_id": "asisten_ai",
+      "category": "Asisten AI",
+      "category_order": 2,
+      "name": "Auto Document Bundle",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "auto_document_bundle",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L718",
+          "index.html#L736"
+        ],
+        "note": "Quotation, invoice, and kwitansi share trip data, but there is no bundle-generation action or automatic multi-document workflow."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "document_quality_check",
+      "number": 9,
+      "category_id": "asisten_ai",
+      "category": "Asisten AI",
+      "category_order": 2,
+      "name": "Document Quality Check",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "document_quality_check",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1124"
+        ],
+        "note": "Pemeriksaan otomatis mencakup validasi dokumen tertentu; tidak melakukan pemeriksaan typo atau quality check AI umum."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "internal_external_version",
+      "number": 10,
+      "category_id": "asisten_ai",
+      "category": "Asisten AI",
+      "category_order": 2,
+      "name": "Internal & External Version",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "internal_external_version",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "document_memory",
+      "number": 11,
+      "category_id": "asisten_ai",
+      "category": "Asisten AI",
+      "category_order": 2,
+      "name": "Document Memory",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "document_memory",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L946"
+        ],
+        "note": "Data tersimpan lokal dan dipakai ulang di trip yang sama; tidak ada arsip/pencarian lintas trip."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "quotation_generator",
+      "number": 12,
+      "category_id": "sales_quotation",
+      "category": "Sales & Quotation",
+      "category_order": 3,
+      "name": "Quotation Generator",
+      "status": "active",
+      "verification_status": "source_reviewed",
+      "modal_id": "quotation_generator",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "buka-tab",
+        "params": {
+          "tab": "qt"
+        },
+        "scope": "Form quotation yang aktif."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L659",
+          "index.html#L1112",
+          "index.html#L1281"
+        ],
+        "note": "Quotation form, input bindings, calculations, validation, preview, approval and export actions are implemented."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "proposal_wisata",
+      "number": 13,
+      "category_id": "sales_quotation",
+      "category": "Sales & Quotation",
+      "category_order": 3,
+      "name": "Proposal Wisata",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "proposal_wisata",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L659",
+          "index.html#L1201"
+        ],
+        "note": "The available output is a quotation that can contain itinerary and terms; a dedicated travel proposal workflow/template was not found."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "travel_package_builder",
+      "number": 14,
+      "category_id": "sales_quotation",
+      "category": "Sales & Quotation",
+      "category_order": 3,
+      "name": "Travel Package Builder",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "travel_package_builder",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "buka-tab",
+        "params": {
+          "tab": "qt"
+        },
+        "scope": "Field paket pada quotation saat ini, bukan katalog paket."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L659"
+        ],
+        "note": "Field paket dan itinerary tersedia untuk quotation saat ini; tidak ada katalog paket tersimpan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "corporate_travel_proposal",
+      "number": 15,
+      "category_id": "sales_quotation",
+      "category": "Sales & Quotation",
+      "category_order": 3,
+      "name": "Corporate Travel Proposal",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "corporate_travel_proposal",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "rab_costing",
+      "number": 16,
+      "category_id": "sales_quotation",
+      "category": "Sales & Quotation",
+      "category_order": 3,
+      "name": "RAB / Costing",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "rab_costing",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1112",
+          "index.html#L1201"
+        ],
+        "note": "hitung() calculates selling-price components and totals for a quotation; no internal cost/RAB model or cost-vs-price calculation was found."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "pricing_simulator",
+      "number": 17,
+      "category_id": "sales_quotation",
+      "category": "Sales & Quotation",
+      "category_order": 3,
+      "name": "Pricing Simulator",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "pricing_simulator",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "paket_gathering",
+      "number": 18,
+      "category_id": "sales_quotation",
+      "category": "Sales & Quotation",
+      "category_order": 3,
+      "name": "Paket Gathering",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "paket_gathering",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "paket_outbound",
+      "number": 19,
+      "category_id": "sales_quotation",
+      "category": "Sales & Quotation",
+      "category_order": 3,
+      "name": "Paket Outbound",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "paket_outbound",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "paket_study_tour",
+      "number": 20,
+      "category_id": "sales_quotation",
+      "category": "Sales & Quotation",
+      "category_order": 3,
+      "name": "Paket Study Tour",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "paket_study_tour",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "custom_package",
+      "number": 21,
+      "category_id": "sales_quotation",
+      "category": "Sales & Quotation",
+      "category_order": 3,
+      "name": "Custom Package",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "custom_package",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "buka-tab",
+        "params": {
+          "tab": "qt"
+        },
+        "scope": "Penyusunan paket manual pada quotation saat ini."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L659"
+        ],
+        "note": "Paket dapat diisi manual di quotation saat ini; tidak ada katalog atau pengelolaan paket reusable."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "follow_up_letter",
+      "number": 22,
+      "category_id": "sales_quotation",
+      "category": "Sales & Quotation",
+      "category_order": 3,
+      "name": "Follow-up Letter",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "follow_up_letter",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "sales_message_generator",
+      "number": 23,
+      "category_id": "sales_quotation",
+      "category": "Sales & Quotation",
+      "category_order": 3,
+      "name": "Sales Message Generator",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "sales_message_generator",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "buka-tab",
+        "params": {
+          "tab": "qt"
+        },
+        "scope": "Template pesan tersedia melalui alur dokumen setelah status sesuai."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1384",
+          "index.html#L1401"
+        ],
+        "note": "pesanKlien() builds a fixed quotation message; renderKirim() presents it after approval for copy/WhatsApp. This is not a general sales-message generator."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "invoice",
+      "number": 24,
+      "category_id": "transaction_finance",
+      "category": "Transaction & Finance",
+      "category_order": 4,
+      "name": "Invoice",
+      "status": "active",
+      "verification_status": "source_reviewed",
+      "modal_id": "invoice",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L718",
+          "index.html#L1112"
+        ],
+        "note": "Invoice form is connected to trip data and supports invoice fields, validation, preview and document workflow."
+      },
+      "user_action": {
+        "type": "existing_command",
+        "action": "buka-tab",
+        "params": {
+          "tab": "inv"
+        },
+        "invoke_on": "explicit_user_action",
+        "label": "Buka Invoice (dapat membuat draft)",
+        "effect": "gantiTab(\"inv\") creates a default invoice when none exists; treat this as an explicit action, not passive navigation."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "invoice_dp",
+      "number": 25,
+      "category_id": "transaction_finance",
+      "category": "Transaction & Finance",
+      "category_order": 4,
+      "name": "Invoice DP",
+      "status": "active",
+      "verification_status": "source_reviewed",
+      "modal_id": "invoice_dp",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L721",
+          "index.html#L1608"
+        ],
+        "note": "Existing buat-inv handler creates an invoice with jenis dp; amount derives from configured DP calculation."
+      },
+      "user_action": {
+        "type": "existing_command",
+        "action": "buat-inv",
+        "params": {
+          "jenis": "dp"
+        },
+        "invoke_on": "explicit_user_action",
+        "label": "Buat Invoice Uang Muka",
+        "effect": "Creates and appends an invoice with jenis dp to the current trip."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "invoice_pelunasan",
+      "number": 26,
+      "category_id": "transaction_finance",
+      "category": "Transaction & Finance",
+      "category_order": 4,
+      "name": "Invoice Pelunasan",
+      "status": "active",
+      "verification_status": "source_reviewed",
+      "modal_id": "invoice_pelunasan",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L722",
+          "index.html#L1608"
+        ],
+        "note": "Existing buat-inv handler creates an invoice with jenis pelunasan; amount is calculated from verified payments and trip total."
+      },
+      "user_action": {
+        "type": "existing_command",
+        "action": "buat-inv",
+        "params": {
+          "jenis": "pelunasan"
+        },
+        "invoke_on": "explicit_user_action",
+        "label": "Buat Invoice Pelunasan",
+        "effect": "Creates and appends an invoice with jenis pelunasan to the current trip."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "kuitansi",
+      "number": 27,
+      "category_id": "transaction_finance",
+      "category": "Transaction & Finance",
+      "category_order": 4,
+      "name": "Kuitansi",
+      "status": "active",
+      "verification_status": "source_reviewed",
+      "modal_id": "kuitansi",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L736",
+          "index.html#L1614"
+        ],
+        "note": "Kwitansi form records payment details, invoice reference, receipt checks, validation and preview."
+      },
+      "user_action": {
+        "type": "existing_command",
+        "action": "buka-tab",
+        "params": {
+          "tab": "kw"
+        },
+        "invoke_on": "explicit_user_action",
+        "label": "Buka Kwitansi (dapat membuat draft)",
+        "effect": "gantiTab(\"kw\") creates a default kwitansi if none exists; treat this as an explicit action, not passive navigation."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "payment_record",
+      "number": 28,
+      "category_id": "transaction_finance",
+      "category": "Transaction & Finance",
+      "category_order": 4,
+      "name": "Payment Record",
+      "status": "active",
+      "verification_status": "source_reviewed",
+      "modal_id": "payment_record",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L736",
+          "index.html#L1614"
+        ],
+        "note": "Payment amounts can be recorded through kwitansi entries and linked to an invoice; no separate finance ledger is present."
+      },
+      "user_action": {
+        "type": "existing_command",
+        "action": "buka-tab",
+        "params": {
+          "tab": "kw"
+        },
+        "invoke_on": "explicit_user_action",
+        "label": "Catat Pembayaran",
+        "effect": "Uses the existing kwitansi/payment workflow; opening the tab creates a draft kwitansi when none exists."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "payment_reminder",
+      "number": 29,
+      "category_id": "transaction_finance",
+      "category": "Transaction & Finance",
+      "category_order": 4,
+      "name": "Payment Reminder",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "payment_reminder",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "expense_record",
+      "number": 30,
+      "category_id": "transaction_finance",
+      "category": "Transaction & Finance",
+      "category_order": 4,
+      "name": "Expense Record",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "expense_record",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "supplier_payment",
+      "number": 31,
+      "category_id": "transaction_finance",
+      "category": "Transaction & Finance",
+      "category_order": 4,
+      "name": "Supplier Payment",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "supplier_payment",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "project_settlement",
+      "number": 32,
+      "category_id": "transaction_finance",
+      "category": "Transaction & Finance",
+      "category_order": 4,
+      "name": "Project Settlement",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "project_settlement",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "profit_loss_per_project",
+      "number": 33,
+      "category_id": "transaction_finance",
+      "category": "Transaction & Finance",
+      "category_order": 4,
+      "name": "Profit & Loss per Project",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "profit_loss_per_project",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "booking_confirmation",
+      "number": 34,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Booking Confirmation",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "booking_confirmation",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "itinerary",
+      "number": 35,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Itinerary",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "itinerary",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "buka-tab",
+        "params": {
+          "tab": "qt"
+        },
+        "scope": "Itinerary ringkas pada quotation."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L659",
+          "index.html#L1201"
+        ],
+        "note": "Itinerary ringkas per hari dapat disusun dan dicetak dalam quotation; bukan pengelola perjalanan operasional."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "travel_voucher",
+      "number": 36,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Travel Voucher",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "travel_voucher",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "hotel_voucher",
+      "number": 37,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Hotel Voucher",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "hotel_voucher",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "transport_voucher",
+      "number": 38,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Transport Voucher",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "transport_voucher",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "attraction_voucher",
+      "number": 39,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Attraction Voucher",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "attraction_voucher",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "manifest",
+      "number": 40,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Manifest",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "manifest",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "rooming_list",
+      "number": 41,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Rooming List",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "rooming_list",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "passenger_list",
+      "number": 42,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Passenger List",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "passenger_list",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "bus_allocation",
+      "number": 43,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Bus Allocation",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "bus_allocation",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "tour_leader_assignment",
+      "number": 44,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Tour Leader Assignment",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "tour_leader_assignment",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "rundown",
+      "number": 45,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Rundown",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "rundown",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "departure_checklist",
+      "number": 46,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Departure Checklist",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "departure_checklist",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "trip_completion_report",
+      "number": 47,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Trip Completion Report",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "trip_completion_report",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "incident_report",
+      "number": 48,
+      "category_id": "travel_operations",
+      "category": "Travel Operations",
+      "category_order": 5,
+      "name": "Incident Report",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "incident_report",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "company_profile_builder",
+      "number": 49,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Company Profile Builder",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "company_profile_builder",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "company_history",
+      "number": 50,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Company History",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "company_history",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "vision_mission",
+      "number": 51,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Vision & Mission",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "vision_mission",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "organization_chart",
+      "number": 52,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Organization Chart",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "organization_chart",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "legal_document_bank",
+      "number": 53,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Legal Document Bank",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "legal_document_bank",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "portfolio_builder",
+      "number": 54,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Portfolio Builder",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "portfolio_builder",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "project_experience_list",
+      "number": 55,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Project Experience List",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "project_experience_list",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "certificate_archive",
+      "number": 56,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Certificate Archive",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "certificate_archive",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "team_cv_builder",
+      "number": 57,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Team & CV Builder",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "team_cv_builder",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "partner_supplier_profile",
+      "number": 58,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Partner & Supplier Profile",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "partner_supplier_profile",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "tender_requirement_reader",
+      "number": 59,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Tender Requirement Reader",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "tender_requirement_reader",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "tender_checklist",
+      "number": 60,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Tender Checklist",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "tender_checklist",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "tender_document_pack",
+      "number": 61,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Tender Document Pack",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "tender_document_pack",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "technical_proposal_builder",
+      "number": 62,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Technical Proposal Builder",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "technical_proposal_builder",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "tender_cover_letter",
+      "number": 63,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Tender Cover Letter",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "tender_cover_letter",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "statement_letter_generator",
+      "number": 64,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Statement Letter Generator",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "statement_letter_generator",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "expiry_alerts",
+      "number": 65,
+      "category_id": "tender_company_documents",
+      "category": "Tender & Company Documents",
+      "category_order": 6,
+      "name": "Expiry Alerts",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "expiry_alerts",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "proposal_cover",
+      "number": 66,
+      "category_id": "proposal_builder",
+      "category": "Proposal Builder",
+      "category_order": 7,
+      "name": "Proposal Cover",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "proposal_cover",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "cover_letter",
+      "number": 67,
+      "category_id": "proposal_builder",
+      "category": "Proposal Builder",
+      "category_order": 7,
+      "name": "Cover Letter",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "cover_letter",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "executive_summary",
+      "number": 68,
+      "category_id": "proposal_builder",
+      "category": "Proposal Builder",
+      "category_order": 7,
+      "name": "Executive Summary",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "executive_summary",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "client_needs_understanding",
+      "number": 69,
+      "category_id": "proposal_builder",
+      "category": "Proposal Builder",
+      "category_order": 7,
+      "name": "Client Needs Understanding",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "client_needs_understanding",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "solution_description",
+      "number": 70,
+      "category_id": "proposal_builder",
+      "category": "Proposal Builder",
+      "category_order": 7,
+      "name": "Solution Description",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "solution_description",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "methodology",
+      "number": 71,
+      "category_id": "proposal_builder",
+      "category": "Proposal Builder",
+      "category_order": 7,
+      "name": "Methodology",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "methodology",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "work_plan",
+      "number": 72,
+      "category_id": "proposal_builder",
+      "category": "Proposal Builder",
+      "category_order": 7,
+      "name": "Work Plan",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "work_plan",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "schedule_builder",
+      "number": 73,
+      "category_id": "proposal_builder",
+      "category": "Proposal Builder",
+      "category_order": 7,
+      "name": "Schedule Builder",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "schedule_builder",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "proposal_itinerary",
+      "number": 74,
+      "category_id": "proposal_builder",
+      "category": "Proposal Builder",
+      "category_order": 7,
+      "name": "Proposal Itinerary",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "proposal_itinerary",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "team_presentation",
+      "number": 75,
+      "category_id": "proposal_builder",
+      "category": "Proposal Builder",
+      "category_order": 7,
+      "name": "Team Presentation",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "team_presentation",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "rab_pricing_proposal",
+      "number": 76,
+      "category_id": "proposal_builder",
+      "category": "Proposal Builder",
+      "category_order": 7,
+      "name": "RAB & Pricing Proposal",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "rab_pricing_proposal",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "portfolio_attachment",
+      "number": 77,
+      "category_id": "proposal_builder",
+      "category": "Proposal Builder",
+      "category_order": 7,
+      "name": "Portfolio Attachment",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "portfolio_attachment",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "legal_attachments",
+      "number": 78,
+      "category_id": "proposal_builder",
+      "category": "Proposal Builder",
+      "category_order": 7,
+      "name": "Legal Attachments",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "legal_attachments",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "terms_conditions",
+      "number": 79,
+      "category_id": "proposal_builder",
+      "category": "Proposal Builder",
+      "category_order": 7,
+      "name": "Terms & Conditions",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "terms_conditions",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "buka-tab",
+        "params": {
+          "tab": "qt"
+        },
+        "scope": "Syarat/ketentuan quotation yang sudah ada."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L659",
+          "index.html#L1201"
+        ],
+        "note": "Syarat/ketentuan dapat dimasukkan pada quotation; tidak ada pengelola terms untuk proposal tersendiri."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "company_profile_data",
+      "number": 80,
+      "category_id": "company_business_data",
+      "category": "Company & Business Data",
+      "category_order": 8,
+      "name": "Company Profile Data",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "company_profile_data",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "setelan",
+        "params": {},
+        "scope": "Identitas dan kop usaha yang dipakai dalam dokumen."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L759"
+        ],
+        "note": "Identitas, kontak, dan kop usaha dapat disetel untuk dokumen; bukan data perusahaan lengkap."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "brand_identity",
+      "number": 81,
+      "category_id": "company_business_data",
+      "category": "Company & Business Data",
+      "category_order": 8,
+      "name": "Brand Identity",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "brand_identity",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "setelan",
+        "params": {},
+        "scope": "Pengaturan logo/warna untuk kop dan dokumen."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L765",
+          "index.html#L796",
+          "index.html#L1187",
+          "index.html#L1196",
+          "index.html#L1281"
+        ],
+        "note": "Setelan accepts a logo and primary/accent colors; kopH(), kopF(), and renderDok() apply configured branding to document output. This is document branding, not a full brand-guideline manager."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "company_contacts",
+      "number": 82,
+      "category_id": "company_business_data",
+      "category": "Company & Business Data",
+      "category_order": 8,
+      "name": "Company Contacts",
+      "status": "active",
+      "verification_status": "source_reviewed",
+      "modal_id": "company_contacts",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "setelan",
+        "params": {},
+        "scope": "Kontak perusahaan pada Setelan Usaha."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L792",
+          "index.html#L1196"
+        ],
+        "note": "Setelan Usaha has address, phone/WhatsApp, email and website inputs; kopF() renders those contact values in the document footer."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "bank_accounts",
+      "number": 83,
+      "category_id": "company_business_data",
+      "category": "Company & Business Data",
+      "category_order": 8,
+      "name": "Bank Accounts",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "bank_accounts",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "setelan",
+        "params": {},
+        "scope": "Informasi rekening yang tersedia di Setelan Usaha."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L802",
+          "index.html#L803",
+          "index.html#L806",
+          "index.html#L807",
+          "index.html#L1205",
+          "index.html#L1226",
+          "index.html#L1233",
+          "index.html#L1255"
+        ],
+        "note": "Setelan Usaha stores bank, account number, account holder and SWIFT; document rendering uses configured payment details. The UI provides one account set, not multi-account management."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "signatory_data",
+      "number": 84,
+      "category_id": "company_business_data",
+      "category": "Company & Business Data",
+      "category_order": 8,
+      "name": "Signatory Data",
+      "status": "active",
+      "verification_status": "source_reviewed",
+      "modal_id": "signatory_data",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "setelan",
+        "params": {},
+        "scope": "Nama dan jabatan penandatangan pada Setelan Usaha."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L811",
+          "index.html#L812",
+          "index.html#L1227",
+          "index.html#L1256",
+          "index.html#L1277"
+        ],
+        "note": "Setelan Usaha accepts signatory name/title; quotation and receipt rendering include signatory fields in document output."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "document_numbering",
+      "number": 85,
+      "category_id": "company_business_data",
+      "category": "Company & Business Data",
+      "category_order": 8,
+      "name": "Document Numbering",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "document_numbering",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "setelan",
+        "params": {},
+        "scope": "Membuka Setelan Usaha umum. Di sana tersedia kode perangkat dan counter dokumen; tidak ada editor format penomoran."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L818",
+          "index.html#L820",
+          "index.html#L823",
+          "index.html#L1358",
+          "index.html#L1688"
+        ],
+        "note": "Setelan menyediakan kode perangkat serta counter QT/INV/KW. nomorOtomatis() menaikkan counter saat siap-owner berjalan; format penomoran tidak dapat dikonfigurasi penuh."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "customer_database",
+      "number": 86,
+      "category_id": "company_business_data",
+      "category": "Company & Business Data",
+      "category_order": 8,
+      "name": "Customer Database",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "customer_database",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1057",
+          "index.html#L659"
+        ],
+        "note": "A client record exists within the current trip/quotation; no reusable customer directory, search, or database workflow was found."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "supplier_database",
+      "number": 87,
+      "category_id": "company_business_data",
+      "category": "Company & Business Data",
+      "category_order": 8,
+      "name": "Supplier Database",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "supplier_database",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "package_product_database",
+      "number": 88,
+      "category_id": "company_business_data",
+      "category": "Company & Business Data",
+      "category_order": 8,
+      "name": "Package & Product Database",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "package_product_database",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "destination_database",
+      "number": 89,
+      "category_id": "company_business_data",
+      "category": "Company & Business Data",
+      "category_order": 8,
+      "name": "Destination Database",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "destination_database",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "transport_database",
+      "number": 90,
+      "category_id": "company_business_data",
+      "category": "Company & Business Data",
+      "category_order": 8,
+      "name": "Transport Database",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "transport_database",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "hotel_accommodation_database",
+      "number": 91,
+      "category_id": "company_business_data",
+      "category": "Company & Business Data",
+      "category_order": 8,
+      "name": "Hotel & Accommodation Database",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "hotel_accommodation_database",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "staff_database",
+      "number": 92,
+      "category_id": "company_business_data",
+      "category": "Company & Business Data",
+      "category_order": 8,
+      "name": "Staff Database",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "staff_database",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "partner_database",
+      "number": 93,
+      "category_id": "company_business_data",
+      "category": "Company & Business Data",
+      "category_order": 8,
+      "name": "Partner Database",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "partner_database",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "document_archive",
+      "number": 94,
+      "category_id": "document_management",
+      "category": "Document Management",
+      "category_order": 9,
+      "name": "Document Archive",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "document_archive",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1707",
+          "index.html#L1741"
+        ],
+        "note": "Trip JSON can be exported/imported locally; no searchable multi-document archive or archive management was found."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "document_search",
+      "number": 95,
+      "category_id": "document_management",
+      "category": "Document Management",
+      "category_order": 9,
+      "name": "Document Search",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "document_search",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "document_preview",
+      "number": 96,
+      "category_id": "document_management",
+      "category": "Document Management",
+      "category_order": 9,
+      "name": "Document Preview",
+      "status": "active",
+      "verification_status": "source_reviewed",
+      "modal_id": "document_preview",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "ke-pratinjau",
+        "params": {},
+        "scope": "Pratinjau dokumen yang sedang aktif."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1281"
+        ],
+        "note": "The active document is rendered in the app preview from the current document state."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "pdf_export",
+      "number": 97,
+      "category_id": "document_management",
+      "category": "Document Management",
+      "category_order": 9,
+      "name": "PDF Export",
+      "status": "active",
+      "verification_status": "source_reviewed",
+      "modal_id": "pdf_export",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L248",
+          "index.html#L1700"
+        ],
+        "note": "Existing PDF action invokes browser print; PDF output depends on the browser print dialog."
+      },
+      "user_action": {
+        "type": "existing_command",
+        "action": "pdf",
+        "params": {},
+        "invoke_on": "explicit_user_action",
+        "label": "Cetak / Simpan PDF",
+        "effect": "Invokes window.print() for the active document; PDF creation depends on the browser print dialog."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "print_layout",
+      "number": 98,
+      "category_id": "document_management",
+      "category": "Document Management",
+      "category_order": 9,
+      "name": "Print Layout",
+      "status": "active",
+      "verification_status": "source_reviewed",
+      "modal_id": "print_layout",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "ke-pratinjau",
+        "params": {},
+        "scope": "Pratinjau layout dokumen A4 sebelum print."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L248"
+        ],
+        "note": "A4 page and print CSS exist and are used by the document preview/print workflow."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "revision_version_history",
+      "number": 99,
+      "category_id": "document_management",
+      "category": "Document Management",
+      "category_order": 9,
+      "name": "Revision & Version History",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "revision_version_history",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1335",
+          "index.html#L1401"
+        ],
+        "note": "A per-document event log is rendered; no snapshots, version comparison, or restore workflow was found."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "duplicate_document",
+      "number": 100,
+      "category_id": "document_management",
+      "category": "Document Management",
+      "category_order": 9,
+      "name": "Duplicate Document",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "duplicate_document",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "document_templates",
+      "number": 101,
+      "category_id": "document_management",
+      "category": "Document Management",
+      "category_order": 9,
+      "name": "Document Templates",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "document_templates",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "branded_documents",
+      "number": 102,
+      "category_id": "document_management",
+      "category": "Document Management",
+      "category_order": 9,
+      "name": "Branded Documents",
+      "status": "active",
+      "verification_status": "source_reviewed",
+      "modal_id": "branded_documents",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "setelan",
+        "params": {},
+        "scope": "Identitas kop dipakai pada dokumen aktif."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1187",
+          "index.html#L1196",
+          "index.html#L1281"
+        ],
+        "note": "kopH(), kopF(), and renderDok() render the configured logo, company identity, colors, header/footer and document layout. Branding is limited to generated documents."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "approval_workflow",
+      "number": 103,
+      "category_id": "document_management",
+      "category": "Document Management",
+      "category_order": 9,
+      "name": "Approval Workflow",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "approval_workflow",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1401",
+          "index.html#L1688"
+        ],
+        "note": "Persetujuan manual berstatus draft/menunggu/OK/terkirim ada pada dokumen; tidak ada workflow multi-user atau role."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "document_sharing",
+      "number": 104,
+      "category_id": "document_management",
+      "category": "Document Management",
+      "category_order": 9,
+      "name": "Document Sharing",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "document_sharing",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1702"
+        ],
+        "note": "Gambar dokumen dapat dibagikan/diunduh; tidak ada link sharing atau pengaturan akses."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "whatsapp_message_generator",
+      "number": 105,
+      "category_id": "communication_customer_service",
+      "category": "Communication & Customer Service",
+      "category_order": 10,
+      "name": "WhatsApp Message Generator",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "whatsapp_message_generator",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "buka-tab",
+        "params": {
+          "tab": "qt"
+        },
+        "scope": "Pesan statis dokumen tersedia pada workflow pengiriman; bukan generator umum."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1384",
+          "index.html#L1401"
+        ],
+        "note": "pesanKlien() builds fixed messages for quotation, invoice, and kwitansi; renderKirim() presents them for copy/WhatsApp after the relevant document state. This is not a general WhatsApp generator."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "inquiry_response",
+      "number": 106,
+      "category_id": "communication_customer_service",
+      "category": "Communication & Customer Service",
+      "category_order": 10,
+      "name": "Inquiry Response",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "inquiry_response",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "quotation_delivery_message",
+      "number": 107,
+      "category_id": "communication_customer_service",
+      "category": "Communication & Customer Service",
+      "category_order": 10,
+      "name": "Quotation Delivery Message",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "quotation_delivery_message",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "buka-tab",
+        "params": {
+          "tab": "qt"
+        },
+        "scope": "Template pesan quotation pada workflow dokumen."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1384",
+          "index.html#L1401"
+        ],
+        "note": "pesanKlien() builds a fixed quotation delivery message; renderKirim() presents it after approval for copy/WhatsApp. No free-form message generator is present."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "booking_confirmation_message",
+      "number": 108,
+      "category_id": "communication_customer_service",
+      "category": "Communication & Customer Service",
+      "category_order": 10,
+      "name": "Booking Confirmation Message",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "booking_confirmation_message",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "payment_reminder_message",
+      "number": 109,
+      "category_id": "communication_customer_service",
+      "category": "Communication & Customer Service",
+      "category_order": 10,
+      "name": "Payment Reminder Message",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "payment_reminder_message",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "travel_reminder_message",
+      "number": 110,
+      "category_id": "communication_customer_service",
+      "category": "Communication & Customer Service",
+      "category_order": 10,
+      "name": "Travel Reminder Message",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "travel_reminder_message",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "customer_follow_up",
+      "number": 111,
+      "category_id": "communication_customer_service",
+      "category": "Communication & Customer Service",
+      "category_order": 10,
+      "name": "Customer Follow-up",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "customer_follow_up",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "thank_you_message",
+      "number": 112,
+      "category_id": "communication_customer_service",
+      "category": "Communication & Customer Service",
+      "category_order": 10,
+      "name": "Thank-you Message",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "thank_you_message",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1384",
+          "index.html#L1401"
+        ],
+        "note": "pesanKlien() includes a thank-you sentence for payment receipt; renderKirim() presents it as part of the kwitansi communication flow. There is no standalone post-trip thank-you action."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "feedback_request",
+      "number": 113,
+      "category_id": "communication_customer_service",
+      "category": "Communication & Customer Service",
+      "category_order": 10,
+      "name": "Feedback Request",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "feedback_request",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "complaint_response",
+      "number": 114,
+      "category_id": "communication_customer_service",
+      "category": "Communication & Customer Service",
+      "category_order": 10,
+      "name": "Complaint Response",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "complaint_response",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "transaction_report",
+      "number": 115,
+      "category_id": "business_reports_analytics",
+      "category": "Business Reports & Analytics",
+      "category_order": 11,
+      "name": "Transaction Report",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "transaction_report",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "sales_report",
+      "number": 116,
+      "category_id": "business_reports_analytics",
+      "category": "Business Reports & Analytics",
+      "category_order": 11,
+      "name": "Sales Report",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "sales_report",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "customer_report",
+      "number": 117,
+      "category_id": "business_reports_analytics",
+      "category": "Business Reports & Analytics",
+      "category_order": 11,
+      "name": "Customer Report",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "customer_report",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "trip_report",
+      "number": 118,
+      "category_id": "business_reports_analytics",
+      "category": "Business Reports & Analytics",
+      "category_order": 11,
+      "name": "Trip Report",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "trip_report",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "payment_report",
+      "number": 119,
+      "category_id": "business_reports_analytics",
+      "category": "Business Reports & Analytics",
+      "category_order": 11,
+      "name": "Payment Report",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "payment_report",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "buka-tab",
+        "params": {
+          "tab": "qt"
+        },
+        "scope": "Ringkasan keuangan trip aktif saja."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1569"
+        ],
+        "note": "Ringkasan pembayaran hanya untuk trip aktif; tidak ada laporan lintas proyek/periode."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "receivables_report",
+      "number": 120,
+      "category_id": "business_reports_analytics",
+      "category": "Business Reports & Analytics",
+      "category_order": 11,
+      "name": "Receivables Report",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "receivables_report",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "buka-tab",
+        "params": {
+          "tab": "qt"
+        },
+        "scope": "Ringkasan sisa/tagihan trip aktif saja."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1112",
+          "index.html#L1569"
+        ],
+        "note": "Tagihan/sisa dihitung untuk trip aktif; tidak ada aging atau laporan piutang multi-pelanggan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "trip_cost_report",
+      "number": 121,
+      "category_id": "business_reports_analytics",
+      "category": "Business Reports & Analytics",
+      "category_order": 11,
+      "name": "Trip Cost Report",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "trip_cost_report",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "project_profit_report",
+      "number": 122,
+      "category_id": "business_reports_analytics",
+      "category": "Business Reports & Analytics",
+      "category_order": 11,
+      "name": "Project Profit Report",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "project_profit_report",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "supplier_report",
+      "number": 123,
+      "category_id": "business_reports_analytics",
+      "category": "Business Reports & Analytics",
+      "category_order": 11,
+      "name": "Supplier Report",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "supplier_report",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "sales_performance_report",
+      "number": 124,
+      "category_id": "business_reports_analytics",
+      "category": "Business Reports & Analytics",
+      "category_order": 11,
+      "name": "Sales Performance Report",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "sales_performance_report",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "operations_report",
+      "number": 125,
+      "category_id": "business_reports_analytics",
+      "category": "Business Reports & Analytics",
+      "category_order": 11,
+      "name": "Operations Report",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "operations_report",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1593",
+          "index.html#L1401"
+        ],
+        "note": "The dashboard shows recent documents and document status; no operations readiness, staffing, or operational report was found."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "budget_vs_actual_report",
+      "number": 126,
+      "category_id": "business_reports_analytics",
+      "category": "Business Reports & Analytics",
+      "category_order": 11,
+      "name": "Budget vs Actual Report",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "budget_vs_actual_report",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "language_settings",
+      "number": 127,
+      "category_id": "settings_access",
+      "category": "Settings & Access",
+      "category_order": 12,
+      "name": "Language Settings",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "language_settings",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "buka-tab",
+        "params": {
+          "tab": "qt"
+        },
+        "scope": "Preferensi bahasa dokumen, bukan bahasa antarmuka."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L653",
+          "index.html#L1724"
+        ],
+        "note": "The bahasa select controls document language and is stored with trip data; the application interface itself is not translated."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "user_management",
+      "number": 128,
+      "category_id": "settings_access",
+      "category": "Settings & Access",
+      "category_order": 12,
+      "name": "User Management",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "user_management",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "roles_permissions",
+      "number": 129,
+      "category_id": "settings_access",
+      "category": "Settings & Access",
+      "category_order": 12,
+      "name": "Roles & Permissions",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "roles_permissions",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "approval_settings",
+      "number": 130,
+      "category_id": "settings_access",
+      "category": "Settings & Access",
+      "category_order": 12,
+      "name": "Approval Settings",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "approval_settings",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "template_settings",
+      "number": 131,
+      "category_id": "settings_access",
+      "category": "Settings & Access",
+      "category_order": 12,
+      "name": "Template Settings",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "template_settings",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "company_settings",
+      "number": 132,
+      "category_id": "settings_access",
+      "category": "Settings & Access",
+      "category_order": 12,
+      "name": "Company Settings",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "company_settings",
+      "navigation": {
+        "type": "passive_navigation",
+        "action": "setelan",
+        "params": {},
+        "scope": "Setelan usaha/dokumen yang tersedia."
+      },
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L759"
+        ],
+        "note": "Setelan Usaha mencakup identitas dan preferensi dokumen; bukan pengaturan sistem SaaS menyeluruh."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "backup_export",
+      "number": 133,
+      "category_id": "settings_access",
+      "category": "Settings & Access",
+      "category_order": 12,
+      "name": "Backup & Export",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "backup_export",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1707",
+          "index.html#L1709",
+          "index.html#L1741",
+          "index.html#L1742"
+        ],
+        "note": "simpan-trip/simpan-set export JSON, while fileTrip/fileSet change handlers read JSON and restore trip/settings data. This is manual local export/import, not scheduled backup."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "activity_log",
+      "number": 134,
+      "category_id": "settings_access",
+      "category": "Settings & Access",
+      "category_order": 12,
+      "name": "Activity Log",
+      "status": "partial",
+      "verification_status": "source_reviewed",
+      "modal_id": "activity_log",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [
+          "index.html#L1335",
+          "index.html#L1401"
+        ],
+        "note": "Log ringkas tersedia per dokumen; bukan activity log global lintas pengguna/sistem."
+      },
+      "modal_binding_status": "planned_not_connected"
+    },
+    {
+      "id": "security_settings",
+      "number": 135,
+      "category_id": "settings_access",
+      "category": "Settings & Access",
+      "category_order": 12,
+      "name": "Security Settings",
+      "status": "coming_soon",
+      "verification_status": "source_reviewed",
+      "modal_id": "security_settings",
+      "navigation": null,
+      "evidence": {
+        "source": "index.html",
+        "references": [],
+        "note": "Source code ditinjau; implementasi khusus fitur ini tidak ditemukan."
+      },
+      "modal_binding_status": "planned_not_connected"
+    }
+  ],
+  "navigation_contract": {
+    "navigation": "Passive destinations only. Opening a feature card or its information modal must not execute a feature action.",
+    "user_action": "Existing side-effecting handlers belong in user_action and may run only after an explicit user action; do not invoke them when opening the information modal.",
+    "parameters": "Parameters describe the existing handler inputs. The application currently dispatches DOM data-act/data-* events, not registry JSON directly; an adapter is not yet implemented."
+  },
+  "modal_binding": {
+    "status": "planned",
+    "key": "modal_id",
+    "note": "modal_id is a stable planned lookup key for matching a registry entry to library content. The modal library does not define these IDs, and index.html does not currently connect 135 registry entries to UI modals."
+  }
+}
