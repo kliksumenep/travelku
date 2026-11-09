@@ -914,6 +914,23 @@
   .modal-fitur-meta, .modal-fitur-content .feature-modal-list h3 { color:var(--v-d); }
   .modal-fitur-content li::before { background-color:var(--v-soft); }
   @media (max-width:900px) { #bawahbar button.on { background:var(--grad); color:#fff; } }
+
+/* ===== Perbaikan akhir (ditaruh paling belakang agar tidak tertimpa aturan di atasnya) ===== */
+/* Navigasi bawah HP: menempel penuh di bawah layar, tidak melayang */
+@media (max-width:900px) {
+  #bawahbar { left:0; right:0; bottom:0; gap:4px; padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));
+    background:#fff; border:0; border-top:1px solid var(--b-line); border-radius:0;
+    -webkit-backdrop-filter:none; backdrop-filter:none; box-shadow:none; }
+  #bawahbar button { min-height:50px; border-radius:14px; font-size:11.5px; font-weight:650; position:relative; background:transparent; color:var(--ui-mute); }
+  #bawahbar button.on { background:linear-gradient(to bottom, rgba(124,92,255,.14), rgba(124,92,255,0)); color:var(--v-d); }
+  #bawahbar button.on::before { content:""; position:absolute; left:12px; right:12px; top:0; height:3px; border-radius:0 0 3px 3px; background:var(--grad-pil); }
+}
+/* Cetak PDF: satu halaman A4 penuh, tanpa halaman kosong */
+@media print {
+  html, body { background:#fff !important; margin:0 !important; }
+  #app { padding:0 !important; margin:0 !important; max-width:none !important; display:block !important; }
+  #bawahbar { display:none !important; }
+}
 </style>
 </head>
 <body>
