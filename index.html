@@ -825,6 +825,95 @@
     .dashboard-section-head h2 { font-size:30px; }
   }
   @media (prefers-reduced-motion:reduce) { .fc-skel { animation:none; } }
+
+  /* ================= Tema v3: terang, khas AI (palet banner KISCC) ================= */
+  :root {
+    --v:#8468FB; --v-d:#5B43D6; --v-soft:#EFEBFF; --bl:#2F7BFF; --cy:#27F2EF; --navy:#04142D;
+    --grad:linear-gradient(135deg,#7A5CFA,#2468E8); --grad-pil:linear-gradient(90deg,#8468FB,#5DADEA 62%,#27F2EF);
+    --gold-grad:linear-gradient(135deg,#A98547,#E9CC88);
+    --b-ink:#04142D; --b-ink-2:#0B2350; --b-gold:#C9A24B; --b-gold-2:#E9CC88; --b-gold-d:#7A5A1C; --b-gold-soft:#FBF5E6;
+    --b-sand:#F7F9FF; --b-teal:#5B43D6; --b-teal-soft:#EFEBFF; --b-line:#E4E9F5; --b-mute:#5A6785;
+    --ui-navy:#04142D; --ui-navy2:#0B2350; --ui-teal:#5B43D6; --ui-teald:#4630B8; --ui-teals:#EFEBFF;
+    --ui-bg:#F7F9FF; --ui-line:#E4E9F5; --ui-ink:#04142D; --ui-mute:#5A6785; --ui-violet:#8468FB;
+    --ui-sh:0 1px 2px rgba(4,20,45,.05),0 10px 28px rgba(70,80,190,.09);
+    --font-display:"Plus Jakarta Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  body { background:#F7F9FF; }
+  #bar { border-bottom-color:var(--b-line); }
+  .brand .lg { background:var(--grad); color:#fff; box-shadow:0 6px 16px rgba(79,70,229,.32); }
+  .brand b { font-weight:800; letter-spacing:-.02em; }
+  .net-pill { color:#0B6B63; background:#E0FBF8; }
+  body.v-home .main-nav [data-act="beranda"] { background:var(--v-soft); color:var(--v-d); }
+  .eyebrow { display:inline-block; padding:4px 10px; border-radius:99px; background:var(--v-soft); color:var(--v-d); font-size:10.5px; letter-spacing:.12em; }
+  .dashboard-section-head h2 { font-weight:800; font-size:22px; letter-spacing:-.02em; }
+
+  .dashboard-hero { padding:22px 18px 18px; border:1px solid var(--b-line); border-radius:24px; color:var(--navy);
+    background:radial-gradient(70% 90% at 100% 0%,rgba(132,104,251,.20),transparent 62%),radial-gradient(60% 80% at 0% 100%,rgba(39,242,239,.17),transparent 62%),#fff;
+    box-shadow:var(--ui-sh); overflow:hidden; }
+  .hero-art { opacity:.4; right:-70px; top:-70px; width:260px; height:260px; }
+  .hero-art [stroke] { stroke:#8468FB; } .hero-art [fill="#E6BE72"] { fill:#27F2EF; }
+  .dashboard-hero .eyebrow { background:var(--v-soft); color:var(--v-d); }
+  .dashboard-hero .hero-copy h1 { font-weight:800; font-size:clamp(27px,8vw,44px); line-height:1.1; letter-spacing:-.03em; color:var(--navy); margin-top:10px; }
+  .dashboard-hero .hero-copy h1 em { background:linear-gradient(90deg,#7A5CFA,#2F7BFF 55%,#1E9BD8); -webkit-background-clip:text; background-clip:text; color:transparent; -webkit-text-fill-color:transparent; }
+  .dashboard-hero .hero-copy > p:not(.eyebrow) { color:var(--b-mute); font-size:14.5px; margin-top:12px; }
+  .hero-actions { grid-template-columns:1fr 1fr; gap:8px; margin-top:18px; }
+  .hero-actions .utama { grid-column:1 / -1; }
+  .hero-actions button { min-height:46px; }
+  .hero-actions button.utama, .hero-actions button.utama:hover { background:var(--grad); color:#fff; box-shadow:0 10px 22px rgba(79,70,229,.30); }
+  .hero-actions button.garis, .hero-actions button.garis:hover { background:#fff; border:1px solid var(--b-line); color:var(--navy); }
+  .hero-actions button#bukaInfoDashboard, .hero-actions button#bukaInfoDashboard:hover { min-height:46px; background:#fff; border:1px solid var(--b-line); color:var(--v-d); font-size:15px; text-decoration:none; }
+  .hero-actions button[data-act="setelan"] { display:none; }
+  .hero-actions button#bukaInfoDashboard, .hero-actions button#bukaInfoDashboard:hover { grid-column:1 / -1; min-height:40px; border-color:transparent; background:transparent; font-size:13.5px; }
+  .hero-proof { margin-top:16px; padding-top:14px; border-top:1px solid var(--b-line); }
+  .hero-proof li { color:#33425A; }
+  .hero-proof .ic { color:#1E9BD8; }
+
+  .dashboard-wrap > .settings-panel { margin-top:12px; padding:0; background:none; border:0; box-shadow:none; }
+  .settings-panel .dashboard-section-head { display:none; }
+  #bKop .bk, #bKop .bk.ok { background:#fff; border:1px solid var(--b-line); border-radius:18px; box-shadow:var(--ui-sh); }
+  #bKop .bk .okc { background:#DDF8F2; color:#0B7A6E; }
+  #bKop .bk:not(.ok) { padding:16px; border:0; border-radius:20px; color:#fff; box-shadow:0 14px 30px rgba(4,20,45,.22);
+    background:radial-gradient(90% 130% at 100% 0%,rgba(132,104,251,.55),transparent 60%),radial-gradient(60% 100% at 0% 100%,rgba(39,242,239,.20),transparent 60%),linear-gradient(155deg,#04142D,#0B2350); }
+  #bKop .bk:not(.ok) .ik { background:rgba(255,255,255,.12); color:#27F2EF; }
+  #bKop .bk:not(.ok) small.lb { color:#27F2EF; }
+  #bKop .bk:not(.ok) b { color:#fff; font-size:16px; }
+  #bKop .bk:not(.ok) small { color:#B9C7E4; }
+  #bKop .bk:not(.ok) > button, #bKop .bk:not(.ok) > button:hover { background:var(--grad); color:#fff; border:0; font-weight:750; min-height:40px; padding:0 16px; border-radius:12px; }
+
+  .dashboard-wrap > .dashboard-section:not(.settings-panel) { margin-top:34px; }
+  .bd { border-color:var(--b-line); border-radius:18px; }
+  .bd:hover { border-color:#C9BDFB; box-shadow:0 14px 32px rgba(70,80,190,.14); }
+  .bd .ico { background:var(--v-soft); color:var(--v-d); }
+  .bd .bd-step { display:inline-block; padding:3px 9px; border-radius:99px; background:var(--grad-pil); color:var(--navy); font-size:10px; }
+  .bd b { margin-top:6px; }
+  .bd.utm { background:linear-gradient(160deg,#fff 42%,#F1ECFF); border-color:#D9D0FF; }
+  .bd.utm .ico { background:var(--grad); color:#fff; }
+
+  .sp-card { background:radial-gradient(90% 70% at 100% 0%,rgba(132,104,251,.50),transparent 60%),radial-gradient(70% 60% at 0% 100%,rgba(39,242,239,.18),transparent 60%),linear-gradient(155deg,#04142D,#0B2350); box-shadow:0 10px 22px rgba(4,20,45,.18); }
+  .sp-cat { color:#27F2EF; } .sp-card h3 { font-weight:800; } .sp-card p { color:#C3D0E8; }
+  button.sp-go, button.sp-go:hover { background:var(--grad); color:#fff; }
+  button.fc-chip b { background:var(--v-soft); color:var(--v-d); }
+  button.fc-chip:hover { background:#F7F5FF; }
+  .fc-search input:focus { border-color:var(--v); box-shadow:0 0 0 4px rgba(132,104,251,.18); }
+  button.fc-cat:hover, .fr:hover { border-color:#C9BDFB; box-shadow:0 14px 32px rgba(70,80,190,.12); }
+  .fc-cat-ico { background:var(--v-soft); color:var(--v-d); }
+  .fc-bar { background:#E9EDF8; } .fc-bar i { background:var(--grad-pil); }
+  .fc-skel { background:linear-gradient(100deg,#ECEFF9 30%,#F6F8FD 50%,#ECEFF9 70%); background-size:220% 100%; }
+  .fc-empty { border-color:#D5DBEC; }
+  button.fr-main:hover { background:#F7F8FD; }
+  .st-b[data-status="partial"] { background:#E4F0FF; color:#1B4FB8; }
+  .st-b[data-status="coming_soon"] { background:var(--gold-grad); color:#3A2A08; }
+  button.fc-try, button.fc-try:hover { color:var(--v-d); background:var(--v-soft); }
+  button.fc-try:hover { background:#E3DCFF; }
+  .dashboard-ai { background:linear-gradient(140deg,#fff 30%,#F1ECFF); border-color:#DDD5FB; }
+  .settings-panel, .dashboard-ai, .recent-panel { border-color:var(--b-line); }
+  .sheet-ico { background:var(--grad); color:#fff; }
+  .sheet-head h2, .modal-fitur-head h2 { font-weight:800; }
+  button.dlg-x { background:#EEF1FA; } button.dlg-x:hover { background:#E2E7F5; }
+  .feature-modal-scope { background:#F7F3FF; border-color:#E0D8F6; color:#4A3C85; }
+  .modal-fitur-meta, .modal-fitur-content .feature-modal-list h3 { color:var(--v-d); }
+  .modal-fitur-content li::before { background-color:var(--v-soft); }
+  @media (max-width:900px) { #bawahbar button.on { background:var(--grad); color:#fff; } }
 </style>
 </head>
 <body>
@@ -846,7 +935,7 @@
   <symbol id="i-x-chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
 </defs></svg>
 <header id="bar">
-  <div class="brand"><div class="lg"><svg class="ic" aria-hidden="true"><use href="#i-logo"/></svg></div><div><b>Travelku</b><small>Travel Business Suite</small></div></div>
+  <div class="brand"><div class="lg"><svg class="ic" aria-hidden="true"><use href="#i-logo"/></svg></div><div><b>Travelku</b><small>Travel Business Workspace</small></div></div>
   <nav class="main-nav" aria-label="Navigasi utama">
     <button class="btn-set" type="button" data-act="beranda"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg>Dashboard</button>
     <button class="btn-set" type="button" data-act="buka-tab" data-tab="qt"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Quotation</button>
@@ -889,6 +978,14 @@
       </div>
     </section>
 
+    <section class="dashboard-section settings-panel" aria-labelledby="judulProfilUsaha">
+      <div class="dashboard-section-head">
+        <div><p class="eyebrow">PENGATURAN BISNIS</p><h2 id="judulProfilUsaha">Setelan Usaha</h2><p>Kelola profil perusahaan dan kop surat yang digunakan pada dokumen.</p></div>
+        <button class="garis" type="button" data-act="setelan"><svg class="ic" aria-hidden="true"><use href="#i-gear"/></svg>Edit Informasi &amp; Kop Surat</button>
+      </div>
+      <div id="bKop"></div>
+    </section>
+
     <section class="dashboard-section" aria-labelledby="judulDokUtama">
       <div class="dashboard-section-head">
         <div><p class="eyebrow">ALUR SATU TRIP</p><h2 id="judulDokUtama">Dari penawaran sampai bukti bayar</h2><p>Tiga dokumen, satu data. Isi sekali, semuanya saling tersambung.</p></div>
@@ -914,13 +1011,6 @@
       <div class="fc-grid" id="daftarKategoriFitur" aria-label="Kategori fitur Travelku"><span class="fc-skel"></span><span class="fc-skel"></span><span class="fc-skel"></span><span class="fc-skel"></span></div>
     </section>
 
-    <section class="dashboard-section settings-panel" aria-labelledby="judulProfilUsaha">
-      <div class="dashboard-section-head">
-        <div><p class="eyebrow">PENGATURAN BISNIS</p><h2 id="judulProfilUsaha">Setelan Usaha</h2><p>Kelola profil perusahaan dan kop surat yang digunakan pada dokumen.</p></div>
-        <button class="garis" type="button" data-act="setelan"><svg class="ic" aria-hidden="true"><use href="#i-gear"/></svg>Edit Informasi &amp; Kop Surat</button>
-      </div>
-      <div id="bKop"></div>
-    </section>
 
     <div class="dashboard-lower">
       <section class="dashboard-section dashboard-ai" aria-labelledby="judulBantuanAi">
