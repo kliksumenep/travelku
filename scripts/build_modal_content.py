@@ -237,6 +237,11 @@ def build_payload(markdown, registry):
             else len(content_lines)
         )
         block_lines = content_lines[marker_line + 1:block_end]
+        # Potong di heading kategori berikutnya (fitur terakhir tiap kategori)
+        for cut, line in enumerate(block_lines):
+            if CATEGORY_RE.match(line):
+                block_lines = block_lines[:cut]
+                break
         while block_lines and not block_lines[-1].strip():
             block_lines.pop()
         if block_lines and block_lines[-1].strip() == "---":
