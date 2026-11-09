@@ -23,7 +23,7 @@
         "Mengetahui pekerjaan terbaru berdasarkan waktu."
       ],
       "prepare": "Aktivitas pengguna dan riwayat pekerjaan di dalam sistem.",
-      "outcome": "Jejak pekerjaan yang lebih mudah ditelusuri dan dipantau.\n\n---\n\n## B. Asisten AI"
+      "outcome": "Jejak pekerjaan yang lebih mudah ditelusuri dan dipantau."
     },
     "chat_jadi_dokumen": {
       "headline": "Dari percakapan pelanggan menjadi dokumen kerja. Lebih cepat dari cara biasa.",
@@ -131,7 +131,7 @@
         "Mengurangi pengisian data yang berulang."
       ],
       "prepare": "Data dan dokumen yang sudah disimpan serta dikelola di sistem.",
-      "outcome": "Alur kerja yang lebih efisien dengan sumber informasi yang lebih konsisten.\n\n---\n\n## C. Sales & Quotation"
+      "outcome": "Alur kerja yang lebih efisien dengan sumber informasi yang lebih konsisten."
     },
     "quotation_generator": {
       "headline": "Penawaran profesional, siap diperiksa dan dikirim.",
@@ -275,7 +275,7 @@
         "Menyiapkan pesan follow-up dan ajakan konfirmasi."
       ],
       "prepare": "Informasi produk, profil pelanggan, tujuan pesan, dan gaya komunikasi.",
-      "outcome": "Draft pesan penjualan yang siap disesuaikan dan dikirim.\n\n---\n\n## D. Transaction & Finance"
+      "outcome": "Draft pesan penjualan yang siap disesuaikan dan dikirim."
     },
     "invoice": {
       "headline": "Tagihan resmi yang rapi membuat transaksi lebih profesional.",
@@ -395,7 +395,7 @@
         "Mengidentifikasi komponen biaya yang perlu dievaluasi."
       ],
       "prepare": "Data pendapatan dan biaya yang lengkap serta telah diperiksa.",
-      "outcome": "Laporan laba rugi per proyek sebagai dasar evaluasi bisnis.\n\n---\n\n## E. Travel Operations"
+      "outcome": "Laporan laba rugi per proyek sebagai dasar evaluasi bisnis."
     },
     "booking_confirmation": {
       "headline": "Setelah pelanggan setuju, pastikan detail pemesanan tercatat jelas.",
@@ -575,7 +575,7 @@
         "Menambahkan tindak lanjut dan dokumen pendukung."
       ],
       "prepare": "Informasi faktual, kronologi, saksi atau pihak terkait, dan bukti yang relevan.",
-      "outcome": "Draft laporan insiden untuk ditinjau penanggung jawab. Fitur ini bukan pengganti prosedur darurat atau pelaporan resmi.\n\n---\n\n## F. Tender & Company Documents"
+      "outcome": "Draft laporan insiden untuk ditinjau penanggung jawab. Fitur ini bukan pengganti prosedur darurat atau pelaporan resmi."
     },
     "company_profile_builder": {
       "headline": "Perkenalkan perusahaan dengan profil yang lebih profesional dan meyakinkan.",
@@ -779,7 +779,7 @@
         "Menyiapkan daftar tindak lanjut pembaruan."
       ],
       "prepare": "Tanggal berlaku dan kedaluwarsa dari dokumen yang benar.",
-      "outcome": "Daftar pemantauan masa berlaku dokumen yang lebih tertib.\n\n---\n\n## G. Proposal Builder"
+      "outcome": "Daftar pemantauan masa berlaku dokumen yang lebih tertib."
     },
     "proposal_cover": {
       "headline": "Kesan pertama proposal dimulai dari sampul yang profesional.",
@@ -947,7 +947,7 @@
         "Menyiapkan bagian persetujuan."
       ],
       "prepare": "Kebijakan perusahaan, ruang lingkup layanan, dan ketentuan yang telah disepakati.",
-      "outcome": "Draft syarat dan ketentuan untuk ditinjau sebelum disepakati. Untuk ketentuan hukum yang mengikat, lakukan pemeriksaan oleh pihak yang kompeten.\n\n---\n\n## H. Company & Business Data"
+      "outcome": "Draft syarat dan ketentuan untuk ditinjau sebelum disepakati. Untuk ketentuan hukum yang mengikat, lakukan pemeriksaan oleh pihak yang kompeten."
     },
     "company_profile_data": {
       "headline": "Masukkan identitas perusahaan sekali, gunakan kembali di berbagai dokumen.",
@@ -1115,7 +1115,7 @@
         "Mengelompokkan mitra berdasarkan bidang."
       ],
       "prepare": "Data mitra dan informasi kerja sama yang telah dikonfirmasi.",
-      "outcome": "Direktori mitra yang membantu pengembangan jaringan bisnis.\n\n---\n\n## I. Document Management"
+      "outcome": "Direktori mitra yang membantu pengembangan jaringan bisnis."
     },
     "document_archive": {
       "headline": "Semua dokumen bisnis lebih mudah ditemukan kembali.",
@@ -1247,7 +1247,7 @@
         "Mencatat referensi pembagian dokumen."
       ],
       "prepare": "Dokumen yang telah disetujui dan data penerima.",
-      "outcome": "Proses berbagi dokumen yang lebih tertib dan memperhatikan kerahasiaan.\n\n---\n\n## J. Communication & Customer Service"
+      "outcome": "Proses berbagi dokumen yang lebih tertib dan memperhatikan kerahasiaan."
     },
     "whatsapp_message_generator": {
       "headline": "Balas pelanggan lebih cepat tanpa kehilangan sentuhan personal.",
@@ -1367,7 +1367,7 @@
         "Menyusun langkah tindak lanjut."
       ],
       "prepare": "Isi keluhan, kronologi, fakta yang telah diperiksa, dan kebijakan layanan.",
-      "outcome": "Draft respons yang lebih terarah. Keputusan kompensasi atau penyelesaian tetap berada pada pihak berwenang.\n\n---\n\n## K. Business Reports & Analytics"
+      "outcome": "Draft respons yang lebih terarah. Keputusan kompensasi atau penyelesaian tetap berada pada pihak berwenang."
     },
     "transaction_report": {
       "headline": "Lihat pergerakan transaksi bisnis dalam laporan yang mudah dibaca.",
@@ -1511,7 +1511,7 @@
         "Menyusun catatan evaluasi."
       ],
       "prepare": "RAB awal dan catatan biaya aktual.",
-      "outcome": "Laporan perbandingan anggaran dan realisasi berdasarkan data yang tersedia.\n\n---\n\n## L. Settings & Access"
+      "outcome": "Laporan perbandingan anggaran dan realisasi berdasarkan data yang tersedia."
     },
     "language_settings": {
       "headline": "Gunakan sistem dalam bahasa yang paling nyaman bagi tim.",
