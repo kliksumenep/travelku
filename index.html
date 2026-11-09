@@ -3,7 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dokumen Trip</title>
+<title>Travelku · Dokumen Trip</title>
+<meta name="description" content="Travelku: ruang kerja untuk travel agent. Quotation, invoice, dan kwitansi berkop sendiri, hitungan otomatis, bisa tanpa internet.">
+<meta name="theme-color" content="#0B1F3A">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
 <!--
   DOKUMEN TRIP (Quotation, Invoice, Kwitansi) — satu file HTML, tanpa internet, tanpa pustaka luar.
 
@@ -436,8 +441,6 @@
   .hero-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
   .hero-actions button { min-height:44px; }
   .hero-actions #bukaInfoDashboard { width:auto; min-height:38px; padding:8px 10px; border-color:transparent; color:var(--ui-mute); font-size:13px; }
-  .hero-symbol { display:grid; width:124px; height:124px; place-items:center; flex:none; border-radius:30px; background:#edf3ff; color:var(--ui-navy); transform:rotate(5deg); }
-  .hero-symbol .ic { width:54px; height:54px; }
   .dashboard-section { min-width:0; }
   .dashboard-section-head { display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin-bottom:14px; }
   .dashboard-section-head h2, .dashboard-ai h2 { margin:0; color:var(--ui-ink); font-size:19px; line-height:1.3; letter-spacing:-.015em; }
@@ -474,33 +477,6 @@
   .recent-panel .dashboard-section-head { align-items:flex-start; margin-bottom:12px; }
   #bRecent { gap:7px; }
   #bRecent .br { min-height:56px; }
-  .feature-catalog-summary { display:grid; gap:10px; margin:0 0 14px; padding:14px; border:1px solid #dfe8f7; border-radius:12px; background:#f8faff; }
-  .feature-catalog-summary > p { margin:0; color:var(--ui-mute); font-size:13px; font-weight:650; }
-  .feature-status-totals { display:flex; flex-wrap:wrap; gap:10px; }
-  .feature-status-total, .feature-status-badge { display:inline-flex; align-items:center; width:max-content; max-width:100%; padding:5px 9px; border:1px solid #dbe4f1; border-radius:9px; background:#fff; color:#42526a; font-size:12px; font-weight:700; line-height:1.35; }
-  .feature-status-total strong { margin-right:4px; color:var(--ui-navy); }
-  .feature-status-badge[data-status="active"] { border-color:#c5e7d5; background:#f1fbf5; color:#176b46; }
-  .feature-status-badge[data-status="partial"] { border-color:#cbdcff; background:#f3f7ff; color:#2458bb; }
-  .feature-status-badge[data-status="coming_soon"] { border-color:#ddd4ff; background:#f8f6ff; color:#6847c7; }
-  .feature-category-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; min-width:0; }
-  .feature-category { min-width:0; overflow:hidden; border:1px solid #d6deeb; border-radius:15px; background:#fff; box-shadow:0 2px 8px rgba(23,36,58,.035); transition:border-color .14s ease,background-color .14s ease,box-shadow .14s ease; }
-  .feature-category:hover { border-color:#246BFD; background:#fbfcff; box-shadow:0 3px 10px rgba(36,107,253,.06); }
-  .feature-category > summary { display:grid; grid-template-columns:minmax(0,1fr) auto 10px; grid-template-rows:auto; align-items:center; gap:8px; min-height:72px; padding:12px; cursor:pointer; list-style:none; }
-  .feature-category > summary::-webkit-details-marker { display:none; }
-  .feature-category > summary::after { content:""; grid-column:3; grid-row:1; align-self:center; width:8px; height:8px; border-right:2px solid var(--ui-mute); border-bottom:2px solid var(--ui-mute); transform:rotate(45deg); transition:transform .15s; }
-  .feature-category[open] > summary::after { transform:rotate(-135deg); }
-  .feature-category-name { display:flex; grid-column:1; grid-row:1; align-items:flex-start; gap:9px; min-width:0; color:var(--ui-ink); font-size:14px; font-weight:700; line-height:1.35; overflow-wrap:anywhere; }
-  .feature-category-icon { width:19px; height:19px; margin-top:1px; flex:none; color:#246BFD; }
-  .feature-category-count { grid-column:2; grid-row:1; color:var(--ui-mute); font-size:11.5px; font-weight:600; line-height:1.35; white-space:nowrap; }
-  .feature-list { display:grid; gap:7px; margin:0; padding:0 14px 12px; list-style:none; }
-  .feature-item-container { min-width:0; margin:0; padding:0; }
-  .feature-item { display:flex; align-items:center; justify-content:space-between; width:100%; min-width:0; min-height:42px; gap:10px; padding:7px 9px; border:1px solid #e6ebf3; border-radius:10px; background:#fff; color:var(--ui-ink); cursor:pointer; text-align:left; transition:border-color .12s ease,background-color .12s ease,transform .12s ease; }
-  .feature-item:hover { border-color:#c4d5fb; background:#f9fbff; }
-  .feature-item:active { background:#f1f6ff; transform:translateY(1px); }
-  .feature-item:focus-visible { outline:2px solid rgba(36,107,253,.42); outline-offset:2px; }
-  .feature-item-name { flex:1 1 auto; min-width:0; color:#2b3b54; font-size:13px; font-weight:500; line-height:1.4; overflow-wrap:anywhere; }
-  .feature-item-chevron { width:14px; height:14px; flex:none; color:#7a8aa3; transform:rotate(180deg); pointer-events:none; }
-  .feature-catalog-error { margin:0; padding:14px; border:1px solid #f1d0cc; border-radius:12px; background:#fff8f7; color:var(--ui-err); font-size:13px; }
   @media (max-width:1000px) {
     #bar { padding:0 18px; gap:12px; }
     .main-nav { gap:0; }
@@ -529,7 +505,6 @@
     .hero-copy > p:not(.eyebrow) { margin-top:9px; font-size:14.5px; }
     .hero-actions { display:grid; grid-template-columns:1fr; margin-top:17px; }
     .hero-actions button { width:100%; }
-    .hero-symbol { display:none; }
     .dashboard-section-head { align-items:flex-start; }
     .dashboard-section-head h2, .dashboard-ai h2 { font-size:17px; }
     .dashboard-section-head p:not(.eyebrow) { font-size:13px; }
@@ -538,17 +513,6 @@
     .bd .ico { grid-column:1; grid-row:1 / span 2; }
     .bd b { grid-column:2; grid-row:1; align-self:end; }
     .bd small { grid-column:2; grid-row:2; align-self:start; }
-    .feature-catalog-summary { padding:12px; }
-    .feature-status-totals { gap:8px 10px; }
-    .feature-status-total { padding:5px 7px; font-size:11.5px; }
-    .feature-category-list { gap:8px; }
-    .feature-category > summary { min-height:68px; padding:10px; gap:6px; }
-    .feature-category-name { gap:7px; font-size:13px; }
-    .feature-category-icon { width:18px; height:18px; }
-    .feature-category-count { font-size:10.5px; }
-    .feature-list { padding:0 11px 10px; }
-    .feature-item { min-height:42px; gap:7px; padding:7px; }
-    .feature-item-name { font-size:12.5px; }
     .card-arrow { position:static; grid-column:3; grid-row:1 / span 2; transform:rotate(180deg); }
     .settings-panel { padding:16px; }
     .settings-panel .dashboard-section-head { display:grid; }
@@ -637,6 +601,230 @@
     #k-ai .ai-actions { flex-wrap:wrap; }
     #k-ai .ai-compact { width:100%; }
   }
+  /* ================= Brand polish v2: palet, font, Dashboard, katalog fitur ================= */
+  @font-face { font-family:"Plus Jakarta Sans"; src:url("fonts/plus-jakarta-sans-latin-wght-normal.woff2") format("woff2"); font-weight:200 800; font-style:normal; font-display:swap; }
+  @font-face { font-family:"Fraunces"; src:url("fonts/fraunces-latin-wght-normal.woff2") format("woff2"); font-weight:100 900; font-style:normal; font-display:swap; }
+  :root {
+    --b-ink:#0B1F3A; --b-ink-2:#143560; --b-gold:#C8963E; --b-gold-2:#E6BE72; --b-gold-d:#8F5F0F; --b-gold-soft:#FBF3E1;
+    --b-sand:#F6F3EC; --b-teal:#0E7C76; --b-teal-soft:#E4F3F1; --b-line:#E8E3D8; --b-mute:#5F6B7A;
+    --ui-navy:#0B1F3A; --ui-navy2:#143560; --ui-teal:#0E7C76; --ui-teald:#0A5E59; --ui-teals:#E4F3F1;
+    --ui-bg:#F6F3EC; --ui-line:#E8E3D8; --ui-ink:#0F1B2D; --ui-mute:#5F6B7A; --ui-violet:#6B4FD8;
+    --ui-sh:0 1px 2px rgba(11,31,58,.05),0 10px 28px rgba(11,31,58,.06);
+    --ui-font:"Plus Jakarta Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --font-display:"Fraunces","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  }
+  body { font-family:var(--ui-font); background:var(--ui-bg); color:var(--ui-ink); -webkit-font-smoothing:antialiased; }
+  body:has(dialog[open]) { overflow:hidden; }
+
+  /* header */
+  #bar { color:var(--b-ink); background:rgba(255,255,255,.88); border-bottom:1px solid var(--b-line); -webkit-backdrop-filter:saturate(1.4) blur(14px); backdrop-filter:saturate(1.4) blur(14px); }
+  .brand .lg { background:linear-gradient(150deg,var(--b-ink),var(--b-ink-2)); color:var(--b-gold-2); box-shadow:0 4px 12px rgba(11,31,58,.25); }
+  .brand b { font-family:var(--font-display); font-size:19px; font-weight:650; letter-spacing:-.01em; color:var(--b-ink); }
+  .brand small { color:var(--b-mute); letter-spacing:.02em; }
+  .net-pill { display:inline-flex; align-items:center; gap:6px; flex:none; margin-left:10px; padding:5px 10px; border-radius:99px; font-size:11.5px; font-weight:700; color:#0A5E59; background:var(--b-teal-soft); }
+  .net-pill i { width:7px; height:7px; border-radius:50%; background:currentColor; }
+  .net-pill[data-on="0"] { color:#8A5A00; background:var(--b-gold-soft); }
+  body.v-home .main-nav [data-act="beranda"] { background:var(--b-gold-soft); color:var(--b-gold-d); }
+
+  /* kerangka dashboard */
+  #beranda { max-width:1040px; padding:0 16px 120px; }
+  .dashboard-wrap { max-width:none; padding:14px 0 8px; }
+  .dashboard-wrap > .dashboard-section { margin-top:44px; }
+  .eyebrow { margin:0 0 8px; color:var(--b-gold-d); font-size:11px; font-weight:800; letter-spacing:.16em; }
+  .dashboard-section-head { margin-bottom:16px; }
+  .dashboard-section-head h2 { font-family:var(--font-display); font-weight:600; font-size:26px; line-height:1.15; letter-spacing:-.015em; color:var(--b-ink); }
+  .dashboard-section-head p:not(.eyebrow) { margin-top:8px; font-size:14.5px; line-height:1.55; color:var(--b-mute); }
+
+  /* hero */
+  .dashboard-hero { display:block; min-height:0; padding:30px 22px 22px; border:0; border-radius:28px; color:#fff;
+    background:radial-gradient(110% 80% at 100% 0%,rgba(200,150,62,.30),transparent 55%),radial-gradient(90% 70% at 0% 100%,rgba(14,124,118,.38),transparent 62%),linear-gradient(155deg,#0B1F3A 0%,#10294D 58%,#0B1F3A 100%);
+    box-shadow:0 24px 56px rgba(11,31,58,.30),inset 0 1px 0 rgba(255,255,255,.09); }
+  .hero-art { position:absolute; right:-46px; top:-34px; width:290px; height:290px; opacity:.55; pointer-events:none; }
+  .dashboard-hero .hero-copy { position:relative; z-index:1; max-width:640px; }
+  .dashboard-hero .eyebrow { color:var(--b-gold-2); }
+  .dashboard-hero .hero-copy h1 { margin:0; font-family:var(--font-display); font-weight:600; font-size:clamp(31px,9vw,48px); line-height:1.07; letter-spacing:-.022em; color:#fff; }
+  .dashboard-hero .hero-copy h1 em { font-style:normal; color:var(--b-gold-2); }
+  .dashboard-hero .hero-copy > p:not(.eyebrow) { max-width:560px; margin:14px 0 0; font-size:15.5px; line-height:1.6; color:#B9C7DC; }
+  .hero-actions { display:grid; grid-template-columns:1fr; gap:10px; margin-top:22px; }
+  .hero-actions button { width:100%; min-height:50px; border-radius:14px; font-size:15px; }
+  .hero-actions button.utama, .hero-actions button.utama:hover { background:linear-gradient(180deg,#EBC77F,#C8963E); color:#2A1A00; font-weight:750; box-shadow:0 10px 24px rgba(200,150,62,.35),inset 0 1px 0 rgba(255,255,255,.45); }
+  .hero-actions button.utama:hover { filter:brightness(1.05); }
+  .hero-actions button.garis, .hero-actions button.garis:hover { background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.24); color:#fff; }
+  .hero-actions button.garis:hover { background:rgba(255,255,255,.14); }
+  .hero-actions button#bukaInfoDashboard, .hero-actions button#bukaInfoDashboard:hover { min-height:40px; border-color:transparent; background:transparent; color:#B9C7DC; font-size:13.5px; font-weight:600; text-decoration:underline; text-underline-offset:3px; text-decoration-color:rgba(185,199,220,.4); }
+  .hero-proof { display:flex; flex-wrap:wrap; gap:10px 18px; margin:20px 0 0; padding:16px 0 0; list-style:none; border-top:1px solid rgba(255,255,255,.13); }
+  .hero-proof li { display:inline-flex; align-items:center; gap:7px; font-size:12.5px; font-weight:650; color:#D6E0EE; }
+  .hero-proof .ic { width:15px; height:15px; color:var(--b-gold-2); stroke-width:2.6; }
+
+  /* kartu dokumen */
+  .bgrid { display:grid; grid-template-columns:1fr; gap:12px; }
+  .bd { position:relative; display:grid; grid-template-columns:48px minmax(0,1fr) 20px; align-items:center; gap:0 14px; min-height:0; padding:16px; text-align:left; background:#fff; border:1px solid var(--b-line); border-radius:20px; box-shadow:var(--ui-sh); transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease; }
+  .bd:hover { background:#fff; transform:translateY(-2px); border-color:#D9C79A; box-shadow:0 14px 32px rgba(11,31,58,.10); }
+  .bd .ico { grid-column:1; grid-row:1; width:48px; height:48px; border-radius:14px; background:#F1ECDF; color:var(--b-ink); }
+  .bd .ico .ic { width:22px; height:22px; }
+  .bd-t { display:block; min-width:0; }
+  .bd-step { display:block; font-style:normal; font-size:10.5px; font-weight:800; letter-spacing:.14em; color:var(--b-gold-d); }
+  .bd b { display:block; margin-top:2px; font-size:17px; color:var(--b-ink); }
+  .bd small { display:block; margin-top:3px; font-size:13px; line-height:1.4; color:var(--b-mute); font-weight:400; }
+  .card-arrow { position:static; grid-column:3; grid-row:1; width:18px; height:18px; color:#9AA4B2; transform:none; transition:transform .18s ease,color .18s ease; }
+  .bd:hover .card-arrow { color:var(--b-ink); transform:translateX(3px); }
+  .bd.utm { background:linear-gradient(160deg,#fff 38%,#FBF1DA); border-color:#EAD7A8; }
+  .bd.utm .ico { background:linear-gradient(150deg,var(--b-ink),var(--b-ink-2)); color:var(--b-gold-2); }
+
+  /* katalog fitur: sorotan */
+  .fc-sub { margin:22px 0 10px; font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--b-mute); }
+  .sp-rail { display:flex; gap:12px; margin:0 -16px -8px; padding:4px 16px 26px; overflow-x:auto; scroll-snap-type:x mandatory; scroll-padding:0 16px; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+  .sp-rail::-webkit-scrollbar { display:none; }
+  .sp-card { position:relative; display:flex; flex-direction:column; flex:0 0 80%; max-width:330px; min-height:236px; padding:20px; scroll-snap-align:start; overflow:hidden; border-radius:22px; color:#fff;
+    background:radial-gradient(90% 70% at 100% 0%,rgba(200,150,62,.28),transparent 60%),linear-gradient(155deg,#0B1F3A,#15386A); box-shadow:0 8px 18px rgba(11,31,58,.16); }
+  .sp-num { position:absolute; top:12px; right:16px; font-family:var(--font-display); font-size:44px; font-weight:600; line-height:1; color:rgba(255,255,255,.09); }
+  .sp-cat { font-size:10.5px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--b-gold-2); }
+  .sp-card h3 { margin:8px 0 0; font-family:var(--font-display); font-size:23px; font-weight:600; line-height:1.15; letter-spacing:-.01em; }
+  .sp-card p { margin:10px 0 0; font-size:14px; line-height:1.55; color:#C3D0E3; }
+  .sp-actions { display:flex; gap:8px; margin-top:auto; padding-top:16px; }
+  button.sp-go, button.sp-go:hover { min-height:42px; padding:0 16px; border-radius:12px; background:linear-gradient(180deg,#EBC77F,#C8963E); color:#2A1A00; font-weight:750; font-size:13.5px; }
+  button.sp-go:hover { filter:brightness(1.05); }
+  button.sp-more, button.sp-more:hover { min-height:42px; padding:0 14px; border-radius:12px; background:rgba(255,255,255,.1); color:#fff; font-size:13.5px; }
+  button.sp-more:hover { background:rgba(255,255,255,.18); }
+
+  /* katalog fitur: kontrol */
+  .fc-toolbar { display:grid; gap:12px; margin-top:6px; }
+  .fc-search { position:relative; display:block; }
+  .fc-search .ic { position:absolute; left:15px; top:50%; width:18px; height:18px; transform:translateY(-50%); color:#8A94A3; pointer-events:none; }
+  .fc-search input { width:100%; min-height:52px; padding:0 16px 0 44px; font:inherit; font-size:15px; color:var(--b-ink); background:#fff; border:1px solid var(--b-line); border-radius:16px; box-shadow:var(--ui-sh); -webkit-appearance:none; appearance:none; }
+  .fc-search input:focus { outline:none; border-color:var(--b-teal); box-shadow:0 0 0 4px rgba(14,124,118,.16); }
+  .fc-chips { display:flex; gap:8px; overflow-x:auto; padding-bottom:2px; scrollbar-width:none; }
+  .fc-chips::-webkit-scrollbar { display:none; }
+  button.fc-chip { flex:none; min-height:42px; padding:0 14px; gap:8px; font-size:13.5px; font-weight:650; color:#33425A; background:#fff; border:1px solid var(--b-line); border-radius:99px; }
+  button.fc-chip:hover { background:#FBF8F1; }
+  button.fc-chip b { padding:2px 8px; border-radius:99px; background:#F1ECDF; color:#6A5A33; font-size:12px; }
+  button.fc-chip[aria-pressed="true"], button.fc-chip[aria-pressed="true"]:hover { color:#fff; background:var(--b-ink); border-color:var(--b-ink); }
+  button.fc-chip[aria-pressed="true"] b { background:rgba(255,255,255,.18); color:#fff; }
+  .fc-status { margin:16px 2px 12px; font-size:13px; font-weight:600; color:var(--b-mute); }
+
+  /* katalog fitur: kategori */
+  .fc-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+  button.fc-cat { position:relative; display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-start; gap:0; min-height:180px; padding:16px; text-align:left; font-weight:400; background:#fff; border:1px solid var(--b-line); border-radius:20px; box-shadow:var(--ui-sh); transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease; }
+  button.fc-cat:hover { background:#fff; transform:translateY(-2px); border-color:#D9C79A; box-shadow:0 14px 32px rgba(11,31,58,.10); }
+  .fc-cat-ico { display:grid; place-items:center; width:42px; height:42px; margin-bottom:14px; border-radius:13px; background:#F1ECDF; color:var(--b-ink); }
+  .fc-cat-name { font-size:15px; font-weight:700; line-height:1.25; color:var(--b-ink); overflow-wrap:break-word; }
+  .fc-cat-tag { display:-webkit-box; margin-top:5px; overflow:hidden; font-size:12.5px; line-height:1.4; color:var(--b-mute); -webkit-line-clamp:2; -webkit-box-orient:vertical; }
+  .fc-cat-meter { display:block; width:100%; margin-top:auto; padding-top:14px; }
+  .fc-bar { display:block; height:5px; overflow:hidden; border-radius:9px; background:#EEE9DC; }
+  .fc-bar i { display:block; height:100%; border-radius:9px; background:linear-gradient(90deg,var(--b-teal),#2FB3A8); }
+  .fc-cat-count { display:block; margin-top:7px; font-size:11.5px; font-weight:650; color:var(--b-mute); }
+  .fc-empty, .fc-error { grid-column:1 / -1; padding:22px 18px; text-align:center; background:#fff; border:1px dashed #D9D2C0; border-radius:18px; color:var(--b-mute); font-size:14px; line-height:1.5; }
+  .fc-error { border-style:solid; border-color:#F0CFC9; background:#FFF8F7; color:#8B2A1B; }
+  .fc-error button { margin-top:10px; }
+  .fc-skel { min-height:180px; border-radius:20px; background:linear-gradient(100deg,#EEE9DC 30%,#F7F3E8 50%,#EEE9DC 70%); background-size:220% 100%; animation:fcShimmer 1.3s linear infinite; }
+  @keyframes fcShimmer { from { background-position:120% 0; } to { background-position:-120% 0; } }
+  .fc-grid.fc-results { grid-template-columns:1fr; gap:8px; }
+
+  /* baris fitur + lencana status */
+  .fr { display:flex; align-items:center; gap:6px; padding:5px 8px 5px 5px; background:#fff; border:1px solid var(--b-line); border-radius:16px; }
+  button.fr-main { flex:1; min-width:0; flex-direction:column; align-items:flex-start; justify-content:center; gap:5px; min-height:52px; padding:8px 10px; text-align:left; background:transparent; font-weight:650; font-size:14px; color:var(--b-ink); border-radius:12px; }
+  button.fr-main:hover { background:#FBF8F1; }
+  .fr-name { overflow-wrap:anywhere; line-height:1.3; }
+  .fr-sub { display:flex; flex-wrap:wrap; align-items:center; gap:6px; font-size:12px; font-weight:500; color:var(--b-mute); }
+  .fr > .ic { width:16px; height:16px; margin-right:6px; color:#9AA4B2; flex:none; }
+  .st-b { display:inline-flex; align-items:center; gap:5px; padding:3px 9px; border-radius:99px; font-size:11px; font-weight:750; line-height:1.3; white-space:nowrap; }
+  .st-b::before { content:""; width:6px; height:6px; border-radius:50%; background:currentColor; }
+  .st-b[data-status="active"] { background:#E3F4EC; color:#0F6B45; }
+  .st-b[data-status="partial"] { background:#FBF1DA; color:#8A5A00; }
+  .st-b[data-status="coming_soon"] { background:#EEEBF7; color:#5B4B9A; }
+  button.fc-try, button.fc-try:hover { flex:none; min-height:38px; padding:0 14px; border-radius:99px; font-size:13px; font-weight:700; color:var(--b-teal); background:var(--b-teal-soft); }
+  button.fc-try:hover { background:#D3EBE8; }
+
+  /* sheet kategori + detail fitur */
+  dialog.sheet-fitur, dialog.modal-fitur { width:min(640px,calc(100vw - 32px)); max-width:none; max-height:min(86dvh,780px); padding:0; overflow:hidden; color:var(--b-ink); background:#fff; border:0; border-radius:28px; box-shadow:0 30px 80px rgba(11,31,58,.38); }
+  dialog.sheet-fitur::backdrop, dialog.modal-fitur::backdrop { background:rgba(8,20,38,.56); -webkit-backdrop-filter:blur(3px); backdrop-filter:blur(3px); }
+  dialog[open].sheet-fitur, dialog[open].modal-fitur { animation:sheetIn .3s cubic-bezier(.2,.8,.2,1); }
+  @keyframes sheetIn { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:none; } }
+  .sheet-inner, .modal-fitur-inner { display:flex; flex-direction:column; min-height:0; max-height:min(86dvh,780px); }
+  .sheet-grab { display:none; flex:none; width:42px; height:4px; margin:10px auto 0; border-radius:9px; background:#D9D3C4; }
+  .sheet-head, .modal-fitur-head { display:flex; align-items:flex-start; gap:14px; padding:20px 22px 16px; border-bottom:1px solid var(--b-line); }
+  .sheet-head > div, .modal-fitur-head > div { flex:1; min-width:0; }
+  .sheet-ico { display:grid; place-items:center; flex:none; width:46px; height:46px; border-radius:14px; background:linear-gradient(150deg,var(--b-ink),var(--b-ink-2)); color:var(--b-gold-2); }
+  .sheet-head h2, .modal-fitur-head h2 { margin:0; font-family:var(--font-display); font-size:25px; font-weight:600; line-height:1.15; letter-spacing:-.012em; color:var(--b-ink); }
+  .sheet-head p { margin:5px 0 0; font-size:13.5px; line-height:1.45; color:var(--b-mute); }
+  button.dlg-x { flex:none; width:40px; min-height:40px; height:40px; padding:0; border-radius:50%; background:#F3EFE4; color:var(--b-ink); }
+  button.dlg-x:hover { background:#E9E3D3; }
+  .sheet-body { min-height:0; flex:1 1 auto; overflow:auto; padding:16px 18px 22px; overscroll-behavior:contain; }
+  .sheet-note { margin:0 4px 12px; font-size:12.5px; font-weight:600; color:var(--b-mute); }
+  .sheet-list { display:grid; gap:8px; }
+  .modal-fitur-meta { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-bottom:8px; font-size:11px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--b-gold-d); }
+  .modal-fitur-status { padding:0; border:0; background:none; letter-spacing:0; text-transform:none; }
+  .modal-fitur-content { padding:20px 22px 24px; }
+  .modal-fitur-content .feature-modal-headline { font-family:var(--font-display); font-size:21px; font-weight:600; line-height:1.3; letter-spacing:-.008em; color:var(--b-ink); }
+  .modal-fitur-content .feature-modal-description { margin-top:12px; font-size:14.5px; line-height:1.65; color:#3C4A5E; }
+  .feature-modal-scope { margin-top:18px; padding:13px 15px; border-radius:14px; background:var(--b-gold-soft); border:1px solid #EFDDAE; color:#6B4A0A; font-size:13.5px; line-height:1.55; }
+  .feature-modal-scope[data-status="coming_soon"] { background:#F4F1FB; border-color:#E0D8F6; color:#4A3C85; }
+  .feature-modal-scope strong { display:block; margin-bottom:3px; font-size:11px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+  .modal-fitur-content .feature-modal-list { margin-top:22px; }
+  .modal-fitur-content .feature-modal-list h3 { margin:0 0 10px; font-size:11.5px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--b-gold-d); }
+  .modal-fitur-content ul { padding:0; list-style:none; }
+  .modal-fitur-content li { position:relative; padding-left:28px; font-size:14.5px; line-height:1.55; color:#26364D; }
+  .modal-fitur-content li + li { margin-top:9px; }
+  .modal-fitur-content li::before { content:""; position:absolute; left:0; top:.2em; width:18px; height:18px; border-radius:50%; background:var(--b-teal-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230E7C76' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/11px no-repeat; }
+  .modal-fitur-content p { font-size:14.5px; line-height:1.65; color:#3C4A5E; }
+  .modal-fitur-foot { display:flex; gap:10px; padding:14px 22px calc(14px + env(safe-area-inset-bottom,0px)); background:#fff; border-top:1px solid var(--b-line); }
+  .modal-fitur-foot button { min-height:50px; border-radius:14px; font-size:15px; }
+  .modal-fitur-foot button.utama { flex:1; }
+  .modal-fitur-foot button[hidden] { display:none; }
+
+  #ringkas[hidden] .tile.hi { background:var(--b-gold-soft); border-color:#EFDDAE; }
+  #ringkas[hidden] .tile.hi small, #ringkas[hidden] .tile.hi em { color:#7A5A1E; }
+  /* panel lain */
+  .settings-panel, .dashboard-ai, .recent-panel { border:1px solid var(--b-line); border-radius:22px; box-shadow:var(--ui-sh); }
+  .dashboard-ai { background:linear-gradient(140deg,#fff 30%,#F4F0FF); border-color:#E3DBFA; }
+  .dashboard-ai h2 { font-size:18px; }
+  #bKop .bk, #bKop .bk.ok, #bKop .bk:not(.ok) { background:#FAF7EF; border-color:var(--b-line); }
+
+  /* navigasi bawah (HP) */
+  @media (max-width:900px) {
+    #bawahbar { left:12px; right:12px; bottom:calc(10px + env(safe-area-inset-bottom,0px)); gap:4px; padding:6px; background:rgba(255,255,255,.92); border:1px solid var(--b-line); border-radius:22px; -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px); box-shadow:0 14px 40px rgba(11,31,58,.18); }
+    #bawahbar button { min-height:50px; border-radius:16px; font-size:11.5px; font-weight:650; }
+    #bawahbar button.on { background:var(--b-ink); color:#fff; }
+  }
+
+  .hero-route { display:none; }
+  @media (max-width:640px) {
+    .fc-chips { gap:6px; }
+    button.fc-chip { padding:0 11px; gap:6px; font-size:13px; }
+    dialog.sheet-fitur, dialog.modal-fitur { width:100%; max-width:none; margin:auto 0 0; max-height:90dvh; border-radius:26px 26px 0 0; }
+    .sheet-inner, .modal-fitur-inner { max-height:90dvh; }
+    .sheet-grab { display:block; }
+    .sheet-head, .modal-fitur-head { padding:14px 18px 14px; }
+    .modal-fitur-content { padding:18px 18px 22px; }
+    .modal-fitur-foot { padding:12px 18px calc(12px + env(safe-area-inset-bottom,0px)); }
+  }
+
+  @media (min-width:640px) {
+    #beranda { padding:0 24px 72px; }
+    .dashboard-hero { padding:48px 44px 34px; border-radius:32px; }
+    .hero-art { right:-20px; top:-30px; width:420px; height:420px; opacity:.9; }
+    .hero-route { display:inline; }
+    .hero-actions { display:flex; flex-wrap:wrap; align-items:center; }
+    .hero-actions button { width:auto; padding:0 22px; }
+    .sp-rail { margin:0 0 -8px; padding:4px 0 26px; scroll-padding:0; }
+    .sp-card { flex-basis:310px; }
+    .fc-toolbar { grid-template-columns:minmax(0,1fr) auto; align-items:center; }
+  }
+  @media (min-width:760px) {
+    .bgrid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+    .bd { grid-template-columns:minmax(0,1fr) 20px; align-content:start; gap:18px 0; min-height:176px; padding:22px; }
+    .bd .ico { grid-column:1; grid-row:1; }
+    .card-arrow { grid-column:2; grid-row:1; align-self:start; }
+    .bd-t { grid-column:1 / -1; grid-row:2; }
+    .fc-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+    .fc-grid.fc-results { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  }
+  @media (min-width:1000px) {
+    .dashboard-hero { padding:60px 56px 40px; }
+    .fc-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+    .dashboard-section-head h2 { font-size:30px; }
+  }
+  @media (prefers-reduced-motion:reduce) { .fc-skel { animation:none; } }
 </style>
 </head>
 <body>
@@ -651,6 +839,12 @@
   <symbol id="i-messages-square" viewBox="0 0 24 24"><path d="M21 11.5a7.5 7.5 0 0 1-7.5 7.5H7l-4 3v-6a7.5 7.5 0 1 1 18-4.5z"/><path d="M8 8h8m-8 4h5"/></symbol>
   <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M8 16v-4m5 4V7m5 9v-7"/><path d="m7 9 5-4 4 2 4-4"/></symbol>
 </defs></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-x-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-x-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-x-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-x-chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+</defs></svg>
 <header id="bar">
   <div class="brand"><div class="lg"><svg class="ic" aria-hidden="true"><use href="#i-logo"/></svg></div><div><b>Travelku</b><small>Travel Business Suite</small></div></div>
   <nav class="main-nav" aria-label="Navigasi utama">
@@ -661,6 +855,7 @@
     <button class="btn-set" type="button" data-act="setelan"><svg class="ic" aria-hidden="true"><use href="#i-gear"/></svg>Setelan Usaha</button>
   </nav>
   <span id="namaUsaha"></span>
+  <span class="net-pill" id="netPill" data-on="1" role="status"><i></i><span>Online</span></span>
 </header>
 <div id="navrow">
   <nav id="tabs" aria-label="Jenis dokumen"><button type="button" data-act="tab" data-tab="qt"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg><span>Quotation</span></button><button type="button" data-act="tab" data-tab="inv"><svg class="ic" aria-hidden="true"><use href="#i-inv"/></svg><span>Invoice</span></button><button type="button" data-act="tab" data-tab="kw"><svg class="ic" aria-hidden="true"><use href="#i-kw"/></svg><span>Kwitansi</span></button></nav>
@@ -669,40 +864,54 @@
 
 <main id="beranda" aria-label="Beranda">
   <div class="dashboard-wrap">
-    <section class="dashboard-hero">
+        <section class="dashboard-hero">
+      <svg class="hero-art" viewBox="0 0 320 320" fill="none" aria-hidden="true">
+        <circle cx="220" cy="100" r="150" stroke="rgba(230,190,114,.20)"/>
+        <circle cx="220" cy="100" r="110" stroke="rgba(230,190,114,.17)"/>
+        <circle cx="220" cy="100" r="70" stroke="rgba(230,190,114,.14)"/>
+        <g class="hero-route"><path d="M18 258C88 150 168 196 246 96" stroke="rgba(230,190,114,.7)" stroke-width="1.6" stroke-dasharray="3 8" stroke-linecap="round"/><circle cx="18" cy="258" r="4.5" fill="#E6BE72"/></g>
+        <g transform="translate(232 70) rotate(8) scale(2.3)" stroke="#E6BE72" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3 3 10.5l6.5 2.5L12 20z"/><path d="M9.5 13 21 3"/></g>
+      </svg>
       <div class="hero-copy">
-        <p class="eyebrow">RUANG KERJA TRAVELKU</p>
-        <h1>Urus Bisnis Travel, Lebih Mudah.</h1>
-        <p>Kelola penawaran, transaksi, dan dokumen perjalanan dalam satu ruang kerja.</p>
+        <p class="eyebrow">RUANG KERJA TRAVEL AGENT</p>
+        <h1>Chat klien masuk. <em>Penawaran rapi</em> keluar.</h1>
+        <p>Susun quotation, invoice, dan kwitansi berkop usaha Anda sendiri. Hitungan dikerjakan otomatis, dan dicek owner dulu sebelum sampai ke klien.</p>
         <div class="hero-actions">
           <button class="utama" type="button" data-act="buka-tab" data-tab="qt"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Buat Quotation</button>
           <button class="garis" type="button" data-act="setelan"><svg class="ic" aria-hidden="true"><use href="#i-gear"/></svg>Atur Profil Usaha</button>
           <button class="garis" id="bukaInfoDashboard" type="button">Tentang Dashboard</button>
         </div>
+        <ul class="hero-proof" aria-label="Keunggulan">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-x-check"/></svg>Hitungan otomatis</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-x-check"/></svg>Dicek owner sebelum kirim</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-x-check"/></svg>Bisa tanpa internet</li>
+        </ul>
       </div>
-      <div class="hero-symbol" aria-hidden="true"><svg class="ic"><use href="#i-logo"/></svg></div>
     </section>
 
     <section class="dashboard-section" aria-labelledby="judulDokUtama">
       <div class="dashboard-section-head">
-        <div><h2 id="judulDokUtama">Dokumen Utama</h2><p>Pilih dokumen untuk mulai bekerja.</p></div>
+        <div><p class="eyebrow">ALUR SATU TRIP</p><h2 id="judulDokUtama">Dari penawaran sampai bukti bayar</h2><p>Tiga dokumen, satu data. Isi sekali, semuanya saling tersambung.</p></div>
       </div>
       <div class="bgrid">
-        <button type="button" class="bd utm" data-act="buka-tab" data-tab="qt"><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg></span><b>Quotation</b><small>Penawaran harga</small><svg class="ic card-arrow" aria-hidden="true"><use href="#i-back"/></svg></button>
-        <button type="button" class="bd" data-act="buka-tab" data-tab="inv"><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-inv"/></svg></span><b>Invoice</b><small>Tagihan pelanggan</small><svg class="ic card-arrow" aria-hidden="true"><use href="#i-back"/></svg></button>
-        <button type="button" class="bd" data-act="buka-tab" data-tab="kw"><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-kw"/></svg></span><b>Kwitansi</b><small>Bukti pembayaran</small><svg class="ic card-arrow" aria-hidden="true"><use href="#i-back"/></svg></button>
+        <button type="button" class="bd utm" data-act="buka-tab" data-tab="qt"><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg></span><span class="bd-t"><i class="bd-step">LANGKAH 1</i><b>Quotation</b><small>Penawaran berkop. Total, DP, dan terbilang dihitung otomatis.</small></span><svg class="ic card-arrow" aria-hidden="true"><use href="#i-x-chev"/></svg></button>
+        <button type="button" class="bd" data-act="buka-tab" data-tab="inv"><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-inv"/></svg></span><span class="bd-t"><i class="bd-step">LANGKAH 2</i><b>Invoice</b><small>Tagih uang muka atau pelunasan, langsung terhubung ke quotation.</small></span><svg class="ic card-arrow" aria-hidden="true"><use href="#i-x-chev"/></svg></button>
+        <button type="button" class="bd" data-act="buka-tab" data-tab="kw"><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-kw"/></svg></span><span class="bd-t"><i class="bd-step">LANGKAH 3</i><b>Kwitansi</b><small>Bukti bayar untuk setiap pembayaran yang sudah masuk.</small></span><svg class="ic card-arrow" aria-hidden="true"><use href="#i-x-chev"/></svg></button>
       </div>
     </section>
 
-    <section class="dashboard-section feature-catalog" aria-labelledby="judulKatalogFitur">
+    <section class="dashboard-section feature-catalog" id="katalogFitur" aria-labelledby="judulKatalogFitur">
       <div class="dashboard-section-head">
-        <div><h2 id="judulKatalogFitur">Jelajahi Fitur Travelku</h2><p>Kenali berbagai fitur untuk membantu mengelola bisnis travel dalam satu workspace.</p></div>
+        <div><p class="eyebrow">JELAJAHI FITUR</p><h2 id="judulKatalogFitur">Semua urusan travel, dalam satu ruang kerja.</h2><p>Mulai dari yang sudah bisa dipakai hari ini. Fitur lainnya sedang kami siapkan, dan statusnya selalu terlihat jelas.</p></div>
       </div>
-      <div class="feature-catalog-summary" id="ringkasanKatalogFitur" aria-live="polite">
-        <p id="statusKatalogFitur">Memuat katalog fitur…</p>
-        <div class="feature-status-totals" id="jumlahStatusFitur"></div>
+      <h3 class="fc-sub">Mulai dari sini</h3>
+      <div class="sp-rail" id="sorotanFitur" aria-label="Fitur unggulan"></div>
+      <div class="fc-toolbar">
+        <label class="fc-search"><svg class="ic" aria-hidden="true"><use href="#i-x-search"/></svg><input type="search" id="cariFitur" placeholder="Cari fitur: invoice, kop surat, PDF…" autocomplete="off" aria-label="Cari fitur"></label>
+        <div class="fc-chips" id="filterStatusFitur" role="group" aria-label="Filter status fitur"></div>
       </div>
-      <div class="feature-category-list" id="daftarKategoriFitur" aria-label="Kategori fitur Travelku"></div>
+      <p class="fc-status" id="statusKatalogFitur" aria-live="polite">Memuat katalog fitur…</p>
+      <div class="fc-grid" id="daftarKategoriFitur" aria-label="Kategori fitur Travelku"><span class="fc-skel"></span><span class="fc-skel"></span><span class="fc-skel"></span><span class="fc-skel"></span></div>
     </section>
 
     <section class="dashboard-section settings-panel" aria-labelledby="judulProfilUsaha">
@@ -946,21 +1155,35 @@
 
 <dialog id="modalInfoFitur" class="modal-fitur" aria-labelledby="modalInfoFiturTitle" aria-describedby="modalInfoFiturDescription">
   <div class="modal-fitur-inner">
+    <div class="sheet-grab" aria-hidden="true"></div>
     <header class="modal-fitur-head">
       <div>
-        <div class="modal-fitur-meta"><span data-feature-modal="category"></span><span class="modal-fitur-status" data-feature-modal="status"></span></div>
+        <div class="modal-fitur-meta"><span data-feature-modal="category"></span><span class="modal-fitur-status st-b" data-feature-modal="status"></span></div>
         <h2 id="modalInfoFiturTitle" data-feature-modal="title"></h2>
       </div>
-      <button class="garis" id="tutupInfoFiturHeader" type="button" aria-label="Tutup informasi fitur" autofocus>Tutup</button>
+      <button class="dlg-x" id="tutupInfoFiturHeader" type="button" aria-label="Tutup informasi fitur" autofocus><svg class="ic" aria-hidden="true"><use href="#i-x-close"/></svg></button>
     </header>
     <div class="modal-fitur-content">
       <p id="modalInfoFiturHeadline" class="feature-modal-headline" data-feature-modal="headline"></p>
       <p id="modalInfoFiturDescription" class="feature-modal-description" data-feature-modal="description"></p>
+      <aside class="feature-modal-scope" id="modalInfoFiturScope" hidden><strong data-feature-modal="scope_label"></strong><span data-feature-modal="scope"></span></aside>
       <section class="feature-modal-list" aria-labelledby="modalInfoFiturCanDoLabel"><h3 id="modalInfoFiturCanDoLabel">Bisa digunakan untuk</h3><ul data-feature-modal="can_do"></ul></section>
       <section class="feature-modal-list" aria-labelledby="modalInfoFiturPrepareLabel"><h3 id="modalInfoFiturPrepareLabel">Yang perlu disiapkan</h3><p data-feature-modal="prepare"></p></section>
       <section class="feature-modal-list" aria-labelledby="modalInfoFiturOutcomeLabel"><h3 id="modalInfoFiturOutcomeLabel">Hasilnya</h3><p data-feature-modal="outcome"></p></section>
     </div>
-    <footer class="modal-fitur-foot"><button class="garis" id="tutupInfoFitur" type="button">Tutup</button></footer>
+    <footer class="modal-fitur-foot"><button class="garis" id="tutupInfoFitur" type="button">Tutup</button><button class="utama" id="cobaFitur" type="button" hidden></button></footer>
+  </div>
+</dialog>
+
+<dialog id="sheetKategoriFitur" class="sheet-fitur" aria-labelledby="sheetKategoriJudul">
+  <div class="sheet-inner">
+    <div class="sheet-grab" aria-hidden="true"></div>
+    <header class="sheet-head">
+      <span class="sheet-ico"><svg class="ic" aria-hidden="true"><use id="sheetKategoriIkon" href="#i-doc"/></svg></span>
+      <div><h2 id="sheetKategoriJudul"></h2><p id="sheetKategoriDesk"></p></div>
+      <button class="dlg-x" id="tutupSheetFitur" type="button" aria-label="Tutup daftar fitur"><svg class="ic" aria-hidden="true"><use href="#i-x-close"/></svg></button>
+    </header>
+    <div class="sheet-body" id="sheetKategoriIsi"></div>
   </div>
 </dialog>
 
@@ -2014,187 +2237,217 @@ function getTravelkuDataStatus() {
   return Object.freeze({ status:travelkuDataState.status, error:travelkuDataState.error });
 }
 void loadTravelkuData();
+/* ============================ Katalog fitur (Dashboard) ============================ */
+const FEATURE_STATUS_LABELS = Object.freeze({ active:"Aktif", partial:"Sebagian tersedia", coming_soon:"Segera hadir" });
+const FEATURE_STATUS_SHORT = Object.freeze({ active:"Aktif", partial:"Sebagian", coming_soon:"Segera hadir" });
+const FEATURE_CATEGORY_ICONS = Object.freeze({
+  dashboard:"i-dashboard", asisten_ai:"i-ai", sales_quotation:"i-doc", transaction_finance:"i-wallet", travel_operations:"i-map",
+  tender_company_documents:"i-brief", proposal_builder:"i-presentation", company_business_data:"i-building", document_management:"i-folder-open",
+  communication_customer_service:"i-messages-square", business_reports_analytics:"i-chart", settings_access:"i-gear"
+});
+/* Nama pendek dan kalimat pemikat per kategori. Hanya tampilan: ID dan data tetap dari registry. */
+const FEATURE_CATEGORY_META = Object.freeze({
+  dashboard:{ short:"Dashboard", tag:"Kondisi usaha, sekali lihat." },
+  asisten_ai:{ short:"Asisten AI", tag:"Dari chat klien jadi draf dokumen." },
+  sales_quotation:{ short:"Penawaran", tag:"Penawaran rapi, hitungan akurat." },
+  transaction_finance:{ short:"Tagihan & Keuangan", tag:"Tagihan dan pembayaran tertata." },
+  travel_operations:{ short:"Operasional Trip", tag:"Dari booking sampai hari keberangkatan." },
+  tender_company_documents:{ short:"Tender & Dokumen", tag:"Dokumen usaha siap untuk tender." },
+  proposal_builder:{ short:"Proposal", tag:"Proposal yang meyakinkan klien." },
+  company_business_data:{ short:"Data Usaha", tag:"Data usaha di satu tempat." },
+  document_management:{ short:"Arsip Dokumen", tag:"Mudah dicari, rapi tersimpan." },
+  communication_customer_service:{ short:"Komunikasi", tag:"Balas klien lebih cepat dan sopan." },
+  business_reports_analytics:{ short:"Laporan", tag:"Angka usaha jadi keputusan." },
+  settings_access:{ short:"Akses & Setelan", tag:"Kop, tim, dan hak akses." }
+});
+/* Tujuan tombol "Coba" bila registry belum memuat navigation untuk fitur yang sudah aktif. */
+const FEATURE_TRY_OVERRIDES = Object.freeze({
+  invoice:{ act:"buka-tab", tab:"inv" }, invoice_dp:{ act:"buka-tab", tab:"inv" }, invoice_pelunasan:{ act:"buka-tab", tab:"inv" },
+  kuitansi:{ act:"buka-tab", tab:"kw" }, payment_record:{ act:"buka-tab", tab:"kw" },
+  document_preview:{ act:"ke-pratinjau" }, pdf_export:{ act:"ke-pratinjau" }, print_layout:{ act:"ke-pratinjau" }
+});
+const FEATURE_SPOTLIGHT = Object.freeze(["quotation_generator", "chat_jadi_dokumen", "invoice_dp", "kuitansi", "branded_documents"]);
+const FC = { q:"", filter:"ready", catalog:null };
+const fcReady = f => f.status !== "coming_soon";
+const fcCatMeta = f => FEATURE_CATEGORY_META[f.category_id] || { short:f.category, tag:"" };
+const fcRank = { active:0, partial:1, coming_soon:2 };
+
+function featureTryAction(feature) {
+  if (!feature || feature.status === "coming_soon") return null;
+  const o = FEATURE_TRY_OVERRIDES[feature.id];
+  const n = feature.navigation && feature.navigation.type === "passive_navigation" ? feature.navigation : null;
+  const act = o ? o.act : n && n.action;
+  const tab = o ? o.tab : n && n.params && n.params.tab;
+  if (act === "buka-tab" && ["qt", "inv", "kw"].includes(tab)) return { act, tab, label:{ qt:"Buka Quotation", inv:"Buka Invoice", kw:"Buka Kwitansi" }[tab] };
+  if (act === "setelan") return { act, tab:"", label:"Buka Setelan Usaha" };
+  if (act === "mulai-ai") return { act, tab:"", label:"Mulai dengan AI" };
+  if (act === "ke-pratinjau") return { act, tab:"", label:"Lihat Pratinjau" };
+  return null;
+}
+const fcTryBtn = (t, cls, text) => `<button type="button" class="${cls}" data-act="${esc(t.act)}" data-tab="${esc(t.tab)}">${esc(text)}</button>`;
+const fcBadge = f => `<span class="st-b" data-status="${esc(f.status)}">${esc(FEATURE_STATUS_SHORT[f.status] || f.status)}</span>`;
+
+function fcRowHtml(f, showCat) {
+  const t = featureTryAction(f);
+  return `<div class="fr"><button type="button" class="fr-main" data-feature-info-id="${esc(f.id)}"><span class="fr-name">${esc(f.name)}</span><span class="fr-sub">${showCat ? esc(fcCatMeta(f).short) + " · " : ""}${fcBadge(f)}</span></button>${t ? fcTryBtn(t, "fc-try", "Coba") : `<svg class="ic" aria-hidden="true"><use href="#i-x-chev"/></svg>`}</div>`;
+}
+function fcHaystack(f) {
+  const m = getTravelkuModal(f.id);
+  return `${f.name} ${f.category} ${fcCatMeta(f).short} ${m ? m.headline + " " + m.description : ""}`.toLowerCase();
+}
+function fcPassStatus(f) { return FC.filter === "all" || (FC.filter === "ready" ? fcReady(f) : !fcReady(f)); }
+
+function renderSpotlight() {
+  const html = FEATURE_SPOTLIGHT.map((id, i) => {
+    const f = getTravelkuFeature(id), m = getTravelkuModal(id);
+    if (!f || !m) return "";
+    const t = featureTryAction(f);
+    return `<article class="sp-card"><span class="sp-num" aria-hidden="true">0${i + 1}</span><span class="sp-cat">${esc(fcCatMeta(f).short)}</span><h3>${esc(f.name)}</h3><p>${esc(m.headline)}</p><div class="sp-actions">${t ? fcTryBtn(t, "sp-go", "Coba sekarang") : ""}<button type="button" class="sp-more" data-feature-info-id="${esc(f.id)}">Pelajari</button></div></article>`;
+  }).join("");
+  $("sorotanFitur").innerHTML = html;
+  $("sorotanFitur").hidden = !html;
+  const sub = document.querySelector(".fc-sub"); if (sub) sub.hidden = !html;
+}
+
+function renderCatalogView() {
+  const cat = FC.catalog; if (!cat) return;
+  const categories = [...cat.categories].sort((a, b) => a.order - b.order);
+  const features = [...cat.features].sort((a, b) => a.number - b.number);
+  const nReady = features.filter(fcReady).length, nSoon = features.length - nReady;
+  $("filterStatusFitur").innerHTML = [["ready", "Bisa dicoba", nReady], ["soon", "Segera", nSoon], ["all", "Semua", features.length]]
+    .map(([k, label, n]) => `<button type="button" class="fc-chip" data-fc-filter="${k}" aria-pressed="${FC.filter === k}">${label}<b>${n}</b></button>`).join("");
+  const grid = $("daftarKategoriFitur"), status = $("statusKatalogFitur");
+  status.className = "fc-status";
+  if (FC.q) {
+    const terms = FC.q.split(/\s+/).filter(Boolean);
+    const hits = features.filter(f => fcPassStatus(f) && terms.every(t => fcHaystack(f).includes(t))).sort((a, b) => fcRank[a.status] - fcRank[b.status] || a.number - b.number);
+    grid.className = "fc-grid fc-results";
+    status.textContent = hits.length ? `${hits.length} fitur cocok dengan “${FC.q}”` : "";
+    grid.innerHTML = hits.length ? hits.map(f => fcRowHtml(f, true)).join("") : `<div class="fc-empty"><b>Belum ada yang cocok.</b><br>Coba kata lain, atau pilih “Semua” untuk melihat seluruh fitur.</div>`;
+    return;
+  }
+  grid.className = "fc-grid";
+  const shown = categories.map(c => {
+    const all = features.filter(f => f.category_id === c.id), ready = all.filter(fcReady).length;
+    return { c, all, ready, count:all.filter(fcPassStatus).length };
+  }).filter(x => x.count > 0);
+  const total = shown.reduce((s, x) => s + x.count, 0);
+  status.textContent = FC.filter === "ready" ? `${total} fitur sudah bisa dicoba, dari ${features.length} fitur total`
+    : FC.filter === "soon" ? `${total} fitur sedang kami siapkan` : `${features.length} fitur di ${categories.length} kategori`;
+  grid.innerHTML = shown.map(({ c, all, ready }) => {
+    const m = FEATURE_CATEGORY_META[c.id] || { short:c.name, tag:"" }, pct = Math.round(ready / all.length * 100);
+    const meter = FC.filter === "soon" ? `${all.length - ready} segera hadir` : `${ready} dari ${all.length} siap`;
+    return `<button type="button" class="fc-cat" data-fc-cat="${esc(c.id)}" aria-label="${esc(m.short)}. ${esc(m.tag)} ${esc(meter)}."><span class="fc-cat-ico"><svg class="ic" aria-hidden="true"><use href="#${FEATURE_CATEGORY_ICONS[c.id] || "i-doc"}"/></svg></span><span class="fc-cat-name">${esc(m.short)}</span><span class="fc-cat-tag">${esc(m.tag)}</span><span class="fc-cat-meter"><span class="fc-bar"><i style="width:${pct}%"></i></span><span class="fc-cat-count">${esc(meter)}</span></span></button>`;
+  }).join("");
+}
+
+function openCategorySheet(catId) {
+  const cat = FC.catalog; if (!cat) return;
+  const c = cat.categories.find(x => x.id === catId); if (!c) return;
+  const m = FEATURE_CATEGORY_META[c.id] || { short:c.name, tag:"" };
+  const all = cat.features.filter(f => f.category_id === c.id).sort((a, b) => fcRank[a.status] - fcRank[b.status] || a.number - b.number);
+  const list = all.filter(fcPassStatus), ready = all.filter(fcReady).length;
+  $("sheetKategoriJudul").textContent = m.short;
+  $("sheetKategoriDesk").textContent = m.tag;
+  $("sheetKategoriIkon").setAttribute("href", `#${FEATURE_CATEGORY_ICONS[c.id] || "i-doc"}`);
+  $("sheetKategoriIsi").innerHTML = `<p class="sheet-note">${ready} dari ${all.length} fitur sudah bisa dicoba. Ketuk fitur untuk membaca detailnya.</p><div class="sheet-list">${list.map(f => fcRowHtml(f, false)).join("")}</div>`;
+  $("sheetKategoriIsi").scrollTop = 0;
+  $("sheetKategoriFitur").showModal();
+}
+
 async function openFeatureInfoModal(featureId) {
   let loaded = false;
-  try {
-    loaded = await loadTravelkuData();
-  } catch (error) {
-    toast(`Informasi fitur tidak dapat dimuat: ${error && error.message ? error.message : String(error)}`, false);
-    return;
+  try { loaded = await loadTravelkuData(); } catch (error) {
+    toast(`Informasi fitur tidak dapat dimuat: ${error && error.message ? error.message : String(error)}`, false); return;
   }
-  if (!loaded) {
-    const status = getTravelkuDataStatus();
-    toast(`Informasi fitur tidak dapat dimuat: ${status.error || "data belum tervalidasi."}`, false);
-    return;
-  }
+  if (!loaded) { toast(`Informasi fitur tidak dapat dimuat: ${getTravelkuDataStatus().error || "data belum tervalidasi."}`, false); return; }
   const feature = getTravelkuFeature(featureId);
-  if (!feature) {
-    toast("Informasi fitur tidak ditemukan di Registry.", false);
-    return;
-  }
+  if (!feature) { toast("Informasi fitur tidak ditemukan di Registry.", false); return; }
   const content = getTravelkuModal(featureId);
-  if (!content) {
-    toast("Konten informasi fitur tidak ditemukan.", false);
-    return;
-  }
+  if (!content) { toast("Konten informasi fitur tidak ditemukan.", false); return; }
   const validContent = typeof content.headline === "string" && content.headline.trim() &&
     typeof content.description === "string" && content.description.trim() &&
     Array.isArray(content.can_do) && content.can_do.length > 0 &&
     content.can_do.every(item => typeof item === "string" && item.trim()) &&
     typeof content.prepare === "string" && content.prepare.trim() &&
     typeof content.outcome === "string" && content.outcome.trim();
-  if (!feature.name || !feature.category || !["active", "partial", "coming_soon"].includes(feature.status) || !validContent) {
-    toast("Informasi fitur tidak dapat ditampilkan karena datanya tidak valid.", false);
-    return;
-  }
+  if (!feature.name || !feature.category || !FEATURE_STATUS_LABELS[feature.status] || !validContent) { toast("Informasi fitur tidak dapat ditampilkan karena datanya tidak valid.", false); return; }
   const dialog = $("modalInfoFitur");
   const field = name => dialog.querySelector(`[data-feature-modal="${name}"]`);
-  const statusLabels = { active:"Aktif", partial:"Sebagian tersedia", coming_soon:"Segera Hadir" };
-  field("category").textContent = feature.category;
-  field("status").textContent = statusLabels[feature.status];
+  field("category").textContent = fcCatMeta(feature).short;
+  const st = field("status"); st.textContent = FEATURE_STATUS_LABELS[feature.status]; st.dataset.status = feature.status;
   field("title").textContent = feature.name;
   field("headline").textContent = content.headline;
   field("description").textContent = content.description;
   field("prepare").textContent = content.prepare;
   field("outcome").textContent = content.outcome;
-  const list = field("can_do");
-  list.replaceChildren();
-  content.can_do.forEach(item => {
-    const li = document.createElement("li");
-    li.textContent = item;
-    list.appendChild(li);
-  });
+  const scope = $("modalInfoFiturScope"), scopeText = feature.navigation && feature.navigation.scope;
+  scope.dataset.status = feature.status;
+  if (feature.status === "coming_soon") { field("scope_label").textContent = "Status"; field("scope").textContent = "Fitur ini sedang disiapkan dan belum bisa dipakai di versi sekarang."; scope.hidden = false; }
+  else if (feature.status === "partial" && scopeText) { field("scope_label").textContent = "Tersedia saat ini"; field("scope").textContent = scopeText; scope.hidden = false; }
+  else scope.hidden = true;
+  $("modalInfoFiturCanDoLabel").textContent = feature.status === "coming_soon" ? "Yang akan bisa dilakukan" : "Bisa digunakan untuk";
+  const list = field("can_do"); list.replaceChildren();
+  content.can_do.forEach(item => { const li = document.createElement("li"); li.textContent = item; list.appendChild(li); });
+  const t = featureTryAction(feature), go = $("cobaFitur");
+  go.hidden = !t;
+  if (t) { go.dataset.act = t.act; go.dataset.tab = t.tab; go.textContent = t.label; } else { delete go.dataset.act; delete go.dataset.tab; }
+  dialog.querySelector(".modal-fitur-content").scrollTop = 0;
   dialog.showModal();
 }
-$("bukaInfoDashboard").addEventListener("click", () => openFeatureInfoModal("dashboard_bisnis"));
-["tutupInfoFiturHeader", "tutupInfoFitur"].forEach(id => {
-  $(id).addEventListener("click", () => $("modalInfoFitur").close());
-});
-$("modalInfoFitur").addEventListener("click", event => {
-  if (event.target === $("modalInfoFitur")) $("modalInfoFitur").close();
-});
-const FEATURE_STATUS_LABELS = Object.freeze({ active:"Aktif", partial:"Sebagian tersedia", coming_soon:"Segera Hadir" });
-const FEATURE_CATEGORY_ICONS = Object.freeze({
-  dashboard:"i-dashboard",
-  asisten_ai:"i-ai",
-  sales_quotation:"i-doc",
-  transaction_finance:"i-wallet",
-  travel_operations:"i-map",
-  tender_company_documents:"i-brief",
-  proposal_builder:"i-presentation",
-  company_business_data:"i-building",
-  document_management:"i-folder-open",
-  communication_customer_service:"i-messages-square",
-  business_reports_analytics:"i-chart",
-  settings_access:"i-gear"
-});
-async function renderTravelkuFeatureCatalog() {
-  const statusElement = $("statusKatalogFitur");
-  const totalsElement = $("jumlahStatusFitur");
-  const categoriesElement = $("daftarKategoriFitur");
-  let loaded = false;
-  try {
-    loaded = await loadTravelkuData();
-  } catch (error) {
-    statusElement.textContent = `Katalog fitur tidak dapat dimuat: ${error && error.message ? error.message : String(error)}`;
-    statusElement.className = "feature-catalog-error";
-    totalsElement.replaceChildren();
-    categoriesElement.replaceChildren();
-    return;
-  }
-  if (!loaded) {
-    const state = getTravelkuDataStatus();
-    statusElement.textContent = `Katalog fitur tidak dapat dimuat: ${state.error || "data belum tervalidasi."}`;
-    statusElement.className = "feature-catalog-error";
-    totalsElement.replaceChildren();
-    categoriesElement.replaceChildren();
-    return;
-  }
-  const catalog = getTravelkuFeatureCatalog();
-  if (!catalog) {
-    statusElement.textContent = "Katalog fitur belum tersedia.";
-    statusElement.className = "feature-catalog-error";
-    totalsElement.replaceChildren();
-    categoriesElement.replaceChildren();
-    return;
-  }
-  const categories = [...catalog.categories].sort((a, b) => a.order - b.order);
-  const features = [...catalog.features].sort((a, b) => a.number - b.number);
-  const statusCounts = new Map(catalog.statusValues.map(status => [status, 0]));
-  features.forEach(feature => statusCounts.set(feature.status, statusCounts.get(feature.status) + 1));
-  statusElement.className = "";
-  statusElement.textContent = `${features.length} fitur total · Ringkasan status`;
-  const statusFragment = document.createDocumentFragment();
-  catalog.statusValues.forEach(status => {
-    const total = document.createElement("span");
-    total.className = "feature-status-total";
-    const count = document.createElement("strong");
-    count.textContent = String(statusCounts.get(status));
-    total.append(count, document.createTextNode(` ${FEATURE_STATUS_LABELS[status] || status}`));
-    statusFragment.appendChild(total);
-  });
-  totalsElement.replaceChildren(statusFragment);
 
-  const categoryFragment = document.createDocumentFragment();
-  categories.forEach(category => {
-    const categoryFeatures = features.filter(feature => feature.category_id === category.id);
-    const details = document.createElement("details");
-    details.className = "feature-category";
-    const summary = document.createElement("summary");
-    const name = document.createElement("span");
-    name.className = "feature-category-name";
-    const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    icon.classList.add("ic", "feature-category-icon");
-    icon.setAttribute("aria-hidden", "true");
-    const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
-    use.setAttribute("href", `#${FEATURE_CATEGORY_ICONS[category.id] || "i-doc"}`);
-    icon.appendChild(use);
-    name.append(icon, document.createTextNode(category.name));
-    const count = document.createElement("span");
-    count.className = "feature-category-count";
-    count.textContent = `${categoryFeatures.length} fitur`;
-    summary.append(name, count);
-    const list = document.createElement("ul");
-    list.className = "feature-list";
-    categoryFeatures.forEach(feature => {
-      const item = document.createElement("li");
-      item.className = "feature-item-container";
-      const featureButton = document.createElement("button");
-      featureButton.className = "feature-item";
-      featureButton.type = "button";
-      featureButton.dataset.featureInfoId = feature.id;
-      featureButton.setAttribute("aria-label", `Lihat detail ${feature.name}`);
-      const featureName = document.createElement("span");
-      featureName.className = "feature-item-name";
-      featureName.textContent = feature.name;
-      const chevron = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-      chevron.classList.add("ic", "feature-item-chevron");
-      chevron.setAttribute("aria-hidden", "true");
-      const chevronUse = document.createElementNS("http://www.w3.org/2000/svg", "use");
-      chevronUse.setAttribute("href", "#i-back");
-      chevron.appendChild(chevronUse);
-      featureButton.append(featureName, chevron);
-      item.appendChild(featureButton);
-      list.appendChild(item);
-    });
-    details.append(summary, list);
-    categoryFragment.appendChild(details);
-  });
-  categoriesElement.replaceChildren(categoryFragment);
-  categoriesElement.setAttribute("aria-label", `${categories.length} kategori, ${features.length} fitur`);
-}
-$("daftarKategoriFitur").addEventListener("click", event => {
-  const row = event.target.closest("button.feature-item[data-feature-info-id]");
-  if (row && $("daftarKategoriFitur").contains(row)) void openFeatureInfoModal(row.dataset.featureInfoId);
+$("bukaInfoDashboard").addEventListener("click", () => openFeatureInfoModal("dashboard_bisnis"));
+["tutupInfoFiturHeader", "tutupInfoFitur"].forEach(id => $(id).addEventListener("click", () => $("modalInfoFitur").close()));
+$("tutupSheetFitur").addEventListener("click", () => $("sheetKategoriFitur").close());
+["modalInfoFitur", "sheetKategoriFitur"].forEach(id => $(id).addEventListener("click", event => { if (event.target === $(id)) $(id).close(); }));
+/* Tombol aksi di dalam dialog: tutup dialog, lalu navigasi dikerjakan penangan data-act global. */
+["modalInfoFitur", "sheetKategoriFitur"].forEach(id => $(id).addEventListener("click", event => {
+  if (event.target.closest("[data-act]")) { $("modalInfoFitur").close(); $("sheetKategoriFitur").close(); }
+}));
+$("sheetKategoriFitur").addEventListener("click", event => {
+  const row = event.target.closest("[data-feature-info-id]"); if (row) void openFeatureInfoModal(row.dataset.featureInfoId);
 });
-$("daftarKategoriFitur").addEventListener("toggle", event => {
-  const openedCategory = event.target;
-  if (!openedCategory || openedCategory.tagName !== "DETAILS" || !openedCategory.classList.contains("feature-category") || !openedCategory.open) return;
-  $("daftarKategoriFitur").querySelectorAll(".feature-category[open]").forEach(category => {
-    if (category !== openedCategory) category.open = false;
-  });
-}, true);
-void renderTravelkuFeatureCatalog();
+$("katalogFitur").addEventListener("click", event => {
+  const info = event.target.closest("[data-feature-info-id]"); if (info) { void openFeatureInfoModal(info.dataset.featureInfoId); return; }
+  const chip = event.target.closest("[data-fc-filter]"); if (chip) { FC.filter = chip.dataset.fcFilter; renderCatalogView(); return; }
+  const cat = event.target.closest("[data-fc-cat]"); if (cat) { openCategorySheet(cat.dataset.fcCat); return; }
+  if (event.target.closest("[data-fc-retry]")) void initTravelkuCatalog();
+});
+let fcTimer;
+$("cariFitur").addEventListener("input", event => {
+  clearTimeout(fcTimer);
+  fcTimer = setTimeout(() => { FC.q = event.target.value.trim().toLowerCase(); renderCatalogView(); }, 120);
+});
+
+async function initTravelkuCatalog() {
+  const status = $("statusKatalogFitur"), grid = $("daftarKategoriFitur");
+  let ok = false;
+  try { ok = await loadTravelkuData(); } catch (error) { ok = false; }
+  const catalog = ok ? getTravelkuFeatureCatalog() : null;
+  if (!catalog) {
+    status.textContent = "";
+    grid.className = "fc-grid";
+    grid.innerHTML = `<div class="fc-error"><b>Katalog fitur belum bisa dimuat.</b><br>Periksa koneksi, lalu coba lagi.<br><button type="button" class="garis" data-fc-retry>Muat ulang</button></div>`;
+    return;
+  }
+  FC.catalog = catalog;
+  renderSpotlight();
+  renderCatalogView();
+}
+void initTravelkuCatalog();
+
+/* Status online/offline dan mode offline (service worker). */
+(function () {
+  const pill = $("netPill"); if (!pill) return;
+  const set = () => {
+    const on = navigator.onLine !== false;
+    pill.dataset.on = on ? "1" : "0";
+    pill.querySelector("span").textContent = on ? "Online" : "Offline";
+    pill.title = on ? "Terhubung ke internet." : "Tanpa internet. Data tetap tersimpan di perangkat ini.";
+  };
+  window.addEventListener("online", set); window.addEventListener("offline", set); set();
+  if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) navigator.serviceWorker.register("sw.js").catch(() => {});
+})();
 </script>
 </body>
 </html>
