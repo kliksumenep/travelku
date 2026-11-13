@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Travelku · Mockup Halaman Depan v6</title>
+<style>
+:root{--navy:#0b1f3a;--ink:#14213d;--mute:#5b6b85;--line:#e4e9f5;--bg:#f6f8fe;--card:#fff;--blue:#3b5bfd;--vio:#7c4dff;--cyan:#12c2e9;--gold:#f5b83d;--ok:#12805a;--oks:#e2f5ec;--warn:#8f5700;--warns:#fff2d6;--soon:#5b6b85;--soons:#eef1f8;--grad:linear-gradient(120deg,#7c4dff,#3b5bfd 55%,#12c2e9);color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:68px;height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:14.5px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;padding-top:env(safe-area-inset-top,0px)}
+button{font:inherit;color:inherit;cursor:pointer}
+.w{max-width:1080px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;gap:14px;height:60px}
+.logo{display:flex;gap:10px;align-items:center;font-weight:800;line-height:1.1;font-size:17px}
+.logo i{width:34px;height:34px;border-radius:11px;background:var(--grad);color:#fff;display:grid;place-items:center;font-style:normal;box-shadow:0 6px 16px rgba(59,91,253,.35)}
+.logo small{display:block;font-weight:500;font-size:11px;color:var(--mute)}
+.menu{display:none;gap:2px;margin-left:18px}
+.menu a{padding:8px 12px;color:var(--mute);font-weight:600;text-decoration:none;border-radius:10px;font-size:14px}
+.menu a:hover{background:#eef2ff;color:var(--blue)}
+header .btn{margin-left:auto}
+@media(min-width:820px){.menu{display:flex}}
+.btn{border:1.5px solid var(--navy);background:#fff;color:var(--navy);padding:11px 18px;border-radius:13px;font-weight:700;transition:.15s;white-space:nowrap}.btn.o{background:transparent;border-color:var(--blue);color:var(--blue)}
+.btn:hover{transform:translateY(-1px)}
+.btn.p{background:var(--grad);border:0;color:#fff;box-shadow:0 8px 20px rgba(59,91,253,.32)}
+.btn.g{background:var(--gold);border:0;color:#2a1c00;box-shadow:0 8px 20px rgba(245,184,61,.35)}
+.btn.s{padding:7px 14px;font-size:14px}
+.btn.big{padding:14px 26px;font-size:16px;border-radius:14px}
+.hero{background:radial-gradient(60% 70% at 85% 0%,rgba(124,77,255,.16),transparent 65%),radial-gradient(50% 60% at 0% 100%,rgba(18,194,233,.14),transparent 65%),#fff;padding:52px 0 56px;border-bottom:1px solid var(--line)}
+.hero .w{display:grid;gap:36px;align-items:center}
+@media(min-width:900px){.hero .w{grid-template-columns:1.05fr .95fr}}
+.pill{display:inline-flex;gap:8px;align-items:center;background:#eef2ff;color:var(--blue);font-weight:700;font-size:12.5px;padding:6px 13px;border-radius:99px;margin-bottom:16px}
+.pill b{background:var(--gold);color:#2a1c00;border-radius:99px;padding:1px 8px;font-size:11px}
+h1{margin:0 0 14px;font-size:46px;line-height:1.08;letter-spacing:-.035em;color:var(--navy)}
+h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{margin:0;color:var(--mute);font-size:17px;max-width:520px}
+.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.pts{display:flex;flex-wrap:wrap;gap:8px 18px;margin:20px 0 0;padding:0;list-style:none;color:var(--mute);font-size:14px;font-weight:600}
+.pts li:before{content:"✓ ";color:var(--ok);font-weight:800}
+.vis{position:relative;display:grid;gap:14px;max-width:460px;width:100%;margin:0 auto}
+.wa{background:#fff;border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:0 18px 40px rgba(20,33,61,.1)}
+.wa .hd{font-size:12px;font-weight:700;color:var(--ok);margin-bottom:8px}
+.wa .b{background:#e9f9ef;border-radius:4px 14px 14px 14px;padding:10px 12px;font-size:13.5px}
+.arr{justify-self:center;width:38px;height:38px;border-radius:50%;background:var(--grad);color:#fff;display:grid;place-items:center;font-weight:800;box-shadow:0 8px 18px rgba(59,91,253,.35)}
+.qt{background:#fff;border:1px solid var(--line);border-top:5px solid var(--vio);border-radius:16px;padding:16px;box-shadow:0 18px 40px rgba(20,33,61,.12);transform:rotate(1.2deg)}
+.qt .k{display:flex;justify-content:space-between;font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--blue)}
+.qt .r{display:flex;justify-content:space-between;font-size:13px;padding:6px 0;border-bottom:1px dashed var(--line);color:var(--mute)}
+.qt .t{display:flex;justify-content:space-between;font-weight:800;font-size:17px;padding-top:10px;color:var(--navy)}
+.sec{padding:36px 0 0}
+.eb{font-size:11.5px;letter-spacing:.14em;font-weight:800;color:var(--blue);margin:0 0 8px}
+h2{margin:0;font-size:30px;line-height:1.2;letter-spacing:-.025em;color:var(--navy)}
+.sub{margin:8px 0 24px;color:var(--mute);max-width:620px}
+.g3{display:grid;gap:14px}
+@media(min-width:760px){.g3{grid-template-columns:repeat(3,1fr)}}
+.ben{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
+.ben .ic{width:46px;height:46px;border-radius:14px;background:#eef2ff;display:grid;place-items:center;font-size:22px;margin-bottom:12px}
+.ben b{font-size:17px;display:block;margin-bottom:4px;color:var(--navy)}.ben span{color:var(--mute);font-size:14.5px}
+.steps{display:grid;gap:12px}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.stp{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;display:grid;gap:4px;align-content:start}
+.stp .n{width:30px;height:30px;border-radius:50%;background:var(--grad);color:#fff;display:grid;place-items:center;font-weight:800;font-size:13px}
+.stp b{font-size:15.5px;color:var(--navy)}.stp .d{color:var(--mute);font-size:13.5px}
+.st{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:99px;white-space:nowrap}
+.st.ok{background:var(--oks);color:var(--ok)}.st.part{background:var(--warns);color:var(--warn)}.st.soon{background:var(--soons);color:var(--soon)}
+.band{margin-top:60px;background:radial-gradient(60% 90% at 100% 0%,rgba(124,77,255,.5),transparent 60%),radial-gradient(50% 80% at 0% 100%,rgba(18,194,233,.28),transparent 60%),var(--navy);color:#fff;padding:56px 0}
+.band .eb{color:var(--gold)}.band h2{color:#fff}.band .sub{color:#b9c6e4}
+.demo{background:#fff;color:var(--ink);border-radius:22px;padding:18px;box-shadow:0 24px 60px rgba(0,0,0,.3)}
+.tabs{display:flex;gap:6px;margin:0 0 14px;overflow-x:auto;padding-bottom:2px}
+.tabs button{border:1px solid var(--line);background:#fff;border-radius:99px;padding:7px 15px;font-weight:700;color:var(--mute);white-space:nowrap}
+.tabs button.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.bub{background:#f0f3fb;border-radius:14px;padding:14px;font-size:14.5px}
+.demo table{width:100%;border-collapse:collapse;font-size:13.5px}.demo td,.demo th{padding:7px 4px;border-bottom:1px solid var(--line);text-align:left}.demo td:last-child,.demo th:last-child{text-align:right;white-space:nowrap}
+.nt{font-size:12.5px;color:var(--mute);margin:10px 0 0}
+.big-no{font-size:26px;font-weight:800;color:var(--navy);letter-spacing:-.02em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{background:rgba(255,255,255,.1);color:#d5def5;border-radius:99px;padding:4px 12px;font-size:13px}
+.cat{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:860px){.cat{grid-template-columns:repeat(4,1fr)}}
+.it{text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;display:grid;gap:6px;align-content:start;min-height:120px;transition:.15s}
+.it:hover{border-color:var(--blue);box-shadow:0 10px 24px rgba(59,91,253,.12)}
+.it b{font-size:14.5px;line-height:1.25;color:var(--navy)}.it .d{color:var(--mute);font-size:12.5px}
+.kop{display:grid;gap:10px;margin-bottom:16px}
+@media(min-width:760px){.kop{grid-template-columns:repeat(3,1fr)}}
+.kop label{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;cursor:pointer}
+.kop label:has(input:checked){border-color:var(--vio);background:#f5f1ff}
+.kop span{font-size:14px}.kop b{display:block;color:var(--navy)}
+.safe div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;font-size:14px}
+.safe div:before{content:"🔒";display:block;margin-bottom:6px}
+.cta{margin:60px 0 0;text-align:center;background:var(--grad);color:#fff;border-radius:26px;padding:46px 18px}
+.cta h2{color:#fff;font-size:32px}.cta p{margin:8px 0 0;color:#e6ecff}.cta .acts{justify-content:center}
+.cta .btn:not(.g){background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.4);color:#fff}
+footer{margin-top:44px;border-top:1px solid var(--line);padding:20px 0 34px;color:var(--mute);font-size:13px}
+.toast{position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--navy);color:#fff;padding:11px 18px;border-radius:13px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:30;max-width:90%;text-align:center}
+.toast.on{opacity:1}
+@media(max-width:759px){h1{font-size:30px}h2{font-size:22px}.hero{padding:26px 0 32px}.sec{padding-top:34px}.band{margin-top:34px;padding:34px 0}.lead{font-size:15.5px}.hero .acts{flex-wrap:nowrap;gap:8px}.hero .acts .btn{flex:1;padding:12px 8px;font-size:15px}.hero .acts .btn.p{flex:1.5}.cta{margin-top:34px;padding:34px 14px}.cta h2{font-size:24px}.demo{padding:14px}.stat b{font-size:28px}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 8px}.stat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 6px;text-align:center}.stat b{display:block;font-size:32px;line-height:1.1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}.stat span{font-size:12px;color:var(--mute);font-weight:600;line-height:1.3;display:block}
+.tier{margin-top:30px}.tier h3{margin:0 0 4px;font-size:13px;letter-spacing:.12em;font-weight:800;display:flex;align-items:center;gap:8px;color:var(--navy)}.tier h3:before{content:"";width:28px;height:5px;border-radius:5px;background:var(--tc)}.tier>p{margin:0 0 14px;color:var(--mute);font-size:14.5px}
+.grid{display:grid;gap:12px}@media(min-width:820px){.grid{grid-template-columns:repeat(3,1fr)}}
+.fc{background:#fff;border:1px solid var(--line);border-top:5px solid var(--tc);border-radius:22px;padding:20px;box-shadow:0 10px 28px rgba(20,33,61,.06)}.fc .ic{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;font-size:24px;background:var(--tb);margin-bottom:10px}.fc h4{margin:0 0 4px;font-size:19px;line-height:1.25;color:var(--navy);letter-spacing:-.01em}.fc .sb{margin:0 0 12px;color:var(--mute);font-size:14.5px}.fc ul{list-style:none;margin:0;padding:12px 0 0;border-top:1px solid var(--line);display:grid;gap:7px}.fc li{font-size:14px;padding-left:22px;position:relative}.fc li:before{content:"✓";position:absolute;left:0;color:var(--tc);font-weight:800}
+.t1{--tc:#12a8d6;--tb:#e6f7fd}.t2{--tc:#7c4dff;--tb:#f0ebff}.t3{--tc:#f5b83d;--tb:rgba(255,255,255,.1)}.t3 .fc{background:linear-gradient(160deg,#0b1f3a,#17365f);border-color:#0b1f3a;border-top-color:#f5b83d}.t3 .fc h4{color:#fff}.t3 .fc .sb,.t3 .fc li{color:#cfdaf3}.t3 .fc ul{border-color:rgba(255,255,255,.16)}
+.ov{position:fixed;inset:0;background:rgba(11,31,58,.6);display:none;align-items:center;justify-content:center;padding:14px;z-index:20}.ov.on{display:flex}.md{background:#fff;border-radius:22px;max-width:520px;width:100%;padding:22px;max-height:88vh;overflow:auto}.md h3{margin:10px 0 4px;font-size:22px;color:var(--navy)}.md h4{margin:14px 0 2px;font-size:11px;letter-spacing:.1em;color:var(--blue)}.md p{margin:0;color:var(--mute)}.md .acts .btn{flex:1}
+
+.ben{display:grid;grid-template-columns:auto 1fr;column-gap:12px;align-items:center;padding:14px}.ben .ic{grid-row:1/3;width:42px;height:42px;margin:0;font-size:20px}.ben b{font-size:16px;margin:0}.ben span{font-size:14px}
+.stp{grid-template-columns:auto 1fr;column-gap:12px;padding:14px;align-items:center}.stp .n{grid-row:1/3}.stp b{font-size:15px}
+.fc{padding:14px;display:grid;grid-template-columns:auto 1fr;column-gap:12px;row-gap:0}.fc .ic{grid-row:1/3;width:42px;height:42px;font-size:21px;margin:0}.fc h4{font-size:17px;align-self:end}.fc .sb{margin:2px 0 10px;font-size:14px;align-self:start}.fc ul{grid-column:1/-1}
+.g3{gap:10px}.steps{gap:10px}.tier{margin-top:24px}
+@media(min-width:760px){.sec{padding-top:56px}.ben{display:block;padding:20px}.ben .ic{width:46px;height:46px;margin-bottom:10px}.ben b{margin-bottom:4px}.stp{grid-template-columns:none;padding:16px;align-items:start}.stp .n{grid-row:auto}.fc{padding:18px}.tier{margin-top:30px}}
+</style>
+</head>
+<body>
+<header><div class="w">
+ <div class="logo"><i>✈</i><div>Travelku<small>Ruang Kerja Travel Agent</small></div></div>
+ <nav class="menu"><a href="#manfaat">Manfaat</a><a href="#cara">Cara kerja</a><a href="#contoh">Contoh</a><a href="#alat">Alat</a><a href="#kop">Kop surat</a></nav>
+ <button class="btn o s" data-t="Mockup: masuk ke aplikasi">Coba gratis</button>
+</div></header>
+
+<section class="hero"><div class="w">
+ <div>
+  <h1>Chat klien masuk. <em>Penawaran rapi</em> keluar.</h1>
+  <p class="lead">Satu ruang kerja untuk seluruh urusan travel: penawaran, tagihan, operasional trip, sampai dokumen tender. Cepat, rapi, dan berkop usaha Anda.</p>
+  <div class="acts"><button class="btn p big" data-t="Mockup: masuk ke aplikasi">Coba gratis</button><button class="btn big" data-go="#contoh">Lihat contoh</button></div>
+  <ul class="pts"><li>Tanpa daftar</li><li>Hitungan otomatis</li><li>Dicek owner sebelum kirim</li><li>Bisa tanpa internet</li></ul>
+ </div>
+ <div class="vis" aria-label="Contoh: chat WA berubah jadi quotation">
+  <div class="wa"><div class="hd">● WhatsApp · Bu Siti, SD Muhammadiyah 1 Magelang</div><div class="b">Pak, mohon info paket wisata fullday ke Jogja 25 Desember, 82 orang, 2 bus. Mohon rincian harga per anak 🙏</div></div>
+  <div class="arr">↓</div>
+  <div class="qt"><div class="k"><span>QUOTATION</span><span>Siap kirim</span></div>
+  <div style="margin:8px 0 4px;font-weight:800;color:var(--navy)">Wisata Edukasi Fullday Jogja</div>
+  <div class="r"><span>Per peserta</span><span>Rp191.000</span></div><div class="r"><span>Peserta</span><span>× 82</span></div>
+  <div class="t"><span>Total</span><span>Rp15.662.000</span></div></div>
+ </div>
+</div></section>
+
+<main class="w">
+<section class="sec" id="manfaat">
+ <p class="eb">KENAPA TRAVELKU</p><h2>Kerja admin yang biasanya berjam-jam, jadi beberapa menit.</h2><p class="sub">Dibuat untuk agen yang sehari-hari membalas chat, menghitung harga, dan menyusun dokumen sendiri.</p>
+ <div class="g3">
+  <div class="ben"><div class="ic">⚡</div><b>Cepat</b><span>Tempel chat klien, data terbaca dan terisi. Anda tinggal koreksi.</span></div>
+  <div class="ben"><div class="ic">🎯</div><b>Tidak ada yang terlewat</b><span>Template siap isi dan daftar pertanyaan untuk klien: titik jemput, kaos, spanduk, dan lainnya.</span></div>
+  <div class="ben"><div class="ic">💼</div><b>Tampil profesional</b><span>Semua dokumen berkop usaha Anda sendiri. Klien lebih yakin, deal lebih mudah.</span></div>
+ </div>
+</section>
+
+<section class="sec" id="cara">
+ <p class="eb">CARA KERJA</p><h2>Dari chat masuk sampai bukti bayar</h2><p class="sub">Enam langkah, satu data. Isi sekali, semuanya saling tersambung.</p>
+ <div class="steps" id="steps"></div>
+ <p class="nt">Invoice baru dibuat setelah quotation disetujui owner.</p>
+</section>
+</main>
+
+<section class="band" id="contoh"><div class="w">
+ <p class="eb">CONTOH NYATA</p><h2>Satu chat WA, jadi penawaran</h2><p class="sub">Ikuti kasus Bu Siti dari chat sampai kuitansi. Nama dan harga hanya ilustrasi.</p>
+ <div class="demo"><div class="tabs" id="ct"></div><div id="cb"></div>
+  <div class="acts"><button class="btn p" data-t="Mockup: masuk ke aplikasi">Coba gratis dengan chat Anda</button></div></div>
+ <div class="chips"><span class="chip">Pengajian · menyusul</span><span class="chip">Meeting perusahaan 4H3M · menyusul</span><span class="chip">Keluarga · menyusul</span></div>
+</div></section>
+
+<main class="w">
+<section class="sec" id="alat">
+ <p class="eb">SATU RUANG KERJA, SEMUA URUSAN TRAVEL</p><h2>Dari order WhatsApp sampai tender miliaran.</h2><p class="sub">Semua yang dibutuhkan travel agent sudah tersedia dan saling tersambung dalam satu data.</p>
+ <div class="stats"><div class="stat"><b>9</b><span>ruang kerja</span></div><div class="stat"><b>135</b><span>alat siap pakai</span></div><div class="stat"><b>1</b><span>data, semua tersambung</span></div></div>
+ <div id="tiers"></div>
+ <div class="acts" style="justify-content:center;margin-top:30px"><button class="btn p big" data-t="Mockup: masuk ke aplikasi">Coba gratis sekarang</button></div>
+</section>
+
+<section class="sec" id="kop">
+ <p class="eb">KOP SURAT</p><h2>Dokumen berkop usaha Anda sendiri</h2><p class="sub">Isi sekali, dipakai di semua dokumen. Pilih yang paling cocok.</p>
+ <div class="kop"><label><input type="radio" name="k" checked><span><b>Belum punya kop</b>Dibuatkan otomatis</span></label><label><input type="radio" name="k"><span><b>Punya logo</b>Warna diambil otomatis</span></label><label><input type="radio" name="k"><span><b>Punya desain jadi</b>Impor gambar kop</span></label></div>
+ <button class="btn" data-t="Mockup: Atur kop surat">Atur kop surat</button>
+</section>
+
+<section class="sec">
+ <p class="eb">KEAMANAN</p><h2>Cara kami menjaga dokumen Anda</h2><p class="sub"></p>
+ <div class="g3 safe"><div>Hitungan dikerjakan aplikasi, bukan AI.</div><div>Owner mengecek dulu sebelum dokumen sampai ke klien.</div><div>Data tersimpan di perangkat Anda. Chat hanya sampai ke AI jika Anda sendiri yang menempelkannya.</div></div>
+</section>
+
+<div class="cta"><h2>Siap mencoba?</h2><p>Mulai dari chat WA klien Anda berikutnya. Gratis, tanpa daftar.</p>
+ <div class="acts"><button class="btn g big" data-t="Mockup: masuk ke aplikasi">Coba gratis sekarang</button><button class="btn big" data-go="#contoh">Lihat contoh hasil</button></div></div>
+</main>
+<footer><div class="w">Travelku · GetMasterAI · Tentang · Kontak [isi] · v[nomor]</div></footer>
+<div class="ov" id="ov"><div class="md" id="md"></div></div>
+<div class="toast" id="toast"></div>
+<script>
+var $=function(i){return document.getElementById(i)},tt;
+function toast(m){var t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(tt);tt=setTimeout(function(){t.classList.remove("on")},2400)}
+var LB={ok:"Siap dipakai",part:"Sebagian siap",soon:"Segera hadir"};
+var STEPS=[["Chat WA masuk","Tempel chat klien. AI membantu membaca isinya."],["Balas dengan cepat","Rekap dan pertanyaan yang kurang tersusun. Anda koreksi, lalu kirim."],["Lengkapi data","Klien membalas. Tempel jawabannya, data diperbarui."],["Hitung anggaran","Biaya bus, tiket, dan makan dijumlahkan. Keluar harga per orang."],["Quotation","Angka terbawa ke penawaran berkop. Owner mengecek, lalu kirim."],["Invoice dan Kuitansi","Setelah deal, tagih DP, lalu beri kuitansi tiap pembayaran masuk."]];
+$("steps").innerHTML=STEPS.map(function(s,i){return '<div class="stp"><span class="n">'+(i+1)+'</span><b>'+s[0]+'</b><span class="d">'+s[1]+'</span></div>'}).join("");
+var TIERS=[["t1","UNTUK ORDER HARIAN","Dari satu chat WhatsApp sampai uang masuk.",[
+["💬","Dari chat WhatsApp jadi penawaran","Chat klien masuk, penawaran profesional langsung jadi. Tempel chat, kami yang menyusun.",["Baca chat klien otomatis: nama, tanggal, peserta, kebutuhan","Daftar data yang kurang plus pertanyaan siap kirim ke klien","Balasan WhatsApp yang sopan dan hangat","Hitung anggaran dan harga per orang","Peserta bertambah atau berkurang? Harga dihitung ulang, untung tetap terjaga","Quotation berkop usaha Anda, lengkap dengan terbilang","Pesan pengantar dan tindak lanjut penawaran"]],
+["🧾","Tagihan dan pembayaran","Dari DP sampai lunas, tercatat rapi dan tidak ada yang terlewat.",["Invoice DP, pelunasan, atau bayar penuh","Kuitansi untuk setiap pembayaran yang masuk","Sisa tagihan terhitung otomatis","Pengingat pembayaran yang sopan","Nomor dokumen otomatis, tanpa nomor ganda"]],
+["🏷️","Kop surat dan data usaha","Setiap dokumen tampil seperti milik perusahaan besar. Isi sekali, dipakai di mana-mana.",["Kop dibuatkan otomatis, dari logo, atau impor desain sendiri","Logo, warna, rekening, dan penanda tangan","Data pelanggan, pemasok, hotel, dan transportasi tersimpan","Dokumen dua bahasa: Indonesia dan English"]]]],
+["t2","UNTUK TIM YANG BERTUMBUH","Trip makin banyak? Semuanya tetap tertib.",[
+["🚌","Siap berangkat","Hari keberangkatan tertib, tidak ada yang tertinggal.",["Itinerary per hari atau per jam","Voucher hotel, bus, dan tiket wisata","Daftar peserta, pembagian kamar, dan pembagian bus","Penugasan tour leader","Rundown dan checklist keberangkatan","Pengingat ke peserta H-7, H-3, H-1","Laporan trip dan catatan kendala"]],
+["🎒","Paket dan acara","Ide paket jadi penawaran yang siap dijual.",["Study tour, gathering, outbound","Paket khusus sesuai permintaan klien","Proposal wisata lengkap dengan itinerary dan harga","Asisten AI untuk ide paket dan penulisan dokumen"]],
+["📊","Untung rugi per trip","Tahu persis trip mana yang untung.",["Catat biaya trip dan pembayaran ke pemasok","Penutupan trip: pendapatan, biaya, selisih","Laba rugi per proyek, anggaran vs realisasi","Laporan penjualan, piutang, dan kinerja tim"]]]],
+["t3","UNTUK TENDER DAN PROYEK BESAR","Siap bersaing di level korporat dan instansi.",[
+["📁","Dokumen tender","Dokumen untuk tender sudah kami siapkan. Cepat, lengkap, profesional.",["Company profile: sejarah, visi misi, struktur organisasi","Portofolio dan daftar pengalaman proyek","Bank dokumen legal dan sertifikat, dengan pengingat masa berlaku","Profil tim dan CV","Baca persyaratan tender otomatis","Checklist kesiapan, paket dokumen, surat pengantar, surat pernyataan"]],
+["📝","Proposal besar","Proposal yang membuat panitia dan klien korporat yakin.",["Sampul, ringkasan eksekutif, pemahaman kebutuhan klien","Solusi, metode kerja, rencana kerja, jadwal","Presentasi tim","RAB dan penawaran harga formal","Lampiran portofolio dan legal, syarat dan ketentuan"]],
+["🛡️","Kendali, arsip, dan keamanan","Owner pegang kendali, tim tetap bergerak cepat.",["Pemeriksaan kualitas dokumen sebelum dikirim","Persetujuan owner sebelum sampai ke klien","Hak akses sesuai peran tim","Arsip, pencarian dokumen, dan riwayat revisi","Simpan PDF, cetak A4, atau bagikan sebagai gambar","Cadangan data dan catatan aktivitas"]]]]];
+$("tiers").innerHTML=TIERS.map(function(t){return '<div class="tier '+t[0]+'"><h3>'+t[1]+'</h3><p>'+t[2]+'</p><div class="grid">'+t[3].map(function(c){return '<div class="fc"><div class="ic">'+c[0]+'</div><h4>'+c[1]+'</h4><p class="sb">'+c[2]+'</p><ul>'+c[3].map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul></div>'}).join("")+'</div></div>'}).join("");
+var CH="Assalamu’alaikum. Ini Bu Siti, guru SD Muhammadiyah 1 Magelang. Pak, mohon info paket wisata ke Jogja ya. Rencana Jumat 25 Desember 2026, sehari saja (fullday), pulang pergi dari Magelang. Peserta 82 orang: 70 siswa dan 12 guru. Pakai 2 bus wisata AC. Kami mau kunjungan ke Museum KH Ahmad Dahlan, lalu satu atau dua tempat edukatif untuk anak. Makan siang sudah termasuk ya Pak. Mohon rincian harga per anak. Terima kasih.";
+var WA="Wa’alaikumussalam Bu Siti. Kami rekap dulu ya: Jumat, 25 Desember 2026, fullday Magelang-Jogja, 82 peserta, 2 bus AC, wajib Museum KH Ahmad Dahlan. Agar penawaran pas, mohon info: (1) titik jemput, (2) perlu kaos dan spanduk, (3) guru ikut dibayar atau gratis, (4) kisaran budget per anak.";
+var CT=[["1 · Chat",'<div class="bub">'+CH+'</div><p class="nt">Chat apa adanya dari klien. Cukup disalin dan ditempel.</p>'],["2 · Quotation",'<div class="bub">Wisata Edukasi Fullday Jogja · untuk Ibu Siti<br>Per peserta Rp191.000 × 82<div class="big-no">Rp15.662.000</div><i>Lima belas juta enam ratus enam puluh dua ribu rupiah.</i></div><p class="nt">Berkop usaha Anda, dicek owner, lalu dikirim ke klien.</p>'],["3 · Invoice",'<div class="bub"><b>INVOICE DP 30%</b><br>Wisata Edukasi Fullday Jogja · SD Muhammadiyah 1 Magelang<br>Total paket Rp15.662.000<div class="big-no">DP Rp4.698.600</div>Sisa tagihan Rp10.963.400</div><p class="nt">Terhubung ke quotation. Baru dibuat setelah deal dan disetujui owner.</p>'],["4 · Kuitansi",'<div class="bub"><b>KUITANSI</b><br>Diterima dari Ibu Siti, SD Muhammadiyah 1 Magelang<br>Untuk pembayaran DP 30% wisata fullday Jogja<div class="big-no">Rp4.698.600</div><i>Empat juta enam ratus sembilan puluh delapan ribu enam ratus rupiah.</i></div><p class="nt">Satu kuitansi untuk setiap pembayaran yang benar-benar masuk.</p>']],ci=0;
+function showCase(){$("ct").innerHTML=CT.map(function(c,i){return '<button class="'+(i===ci?"on":"")+'" data-ct="'+i+'">'+c[0]+'</button>'}).join("");$("cb").innerHTML=CT[ci][1]}
+showCase();
+document.addEventListener("click",function(e){if(e.target.id==="ov"){$("ov").classList.remove("on");return}var el=e.target.closest("button");if(!el)return;var d=el.dataset;
+if(d.ct!==undefined){ci=+d.ct;showCase()}
+else if("close" in d)$("ov").classList.remove("on");
+else if(d.t){$("ov").classList.remove("on");toast(d.t)}
+else if(d.go)document.querySelector(d.go).scrollIntoView()});
+</script>
+</body>
+</html>
